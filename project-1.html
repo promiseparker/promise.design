@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Makins — Case Study · Promise Olaifa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">PO</a>
+      <div class="nav__right">
+        <ul class="nav__links">
+          <li><a href="index.html#work" class="nav__link">Work</a></li>
+          <li><a href="index.html#about" class="nav__link">About</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="cs-hero">
+      <div class="container">
+        <a href="index.html#work" class="cs-back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7"/>
+          </svg>
+          Back to Work
+        </a>
+
+        <div class="cs-tags">
+          <span class="tag">UX Research</span>
+          <span class="tag">Product Design</span>
+          <span class="tag">Web App</span>
+        </div>
+
+        <span class="cs-hero__label">Case Study — 01</span>
+        <h1 class="cs-hero__title">Makins</h1>
+        <p class="cs-hero__desc">
+          Redesigning a B2B analytics dashboard to help teams monitor performance at a glance — reducing cognitive load and surfacing what actually matters.
+        </p>
+
+        <div class="cs-hero__meta">
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Role</span>
+            <span class="cs-meta-value">Lead Product Designer</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Timeline</span>
+            <span class="cs-meta-value">12 Weeks</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Platform</span>
+            <span class="cs-meta-value">Web · SaaS</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Year</span>
+            <span class="cs-meta-value">2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cover Image -->
+    <div class="cs-cover">
+      <img src="images/project-1.png" alt="Makins dashboard interface" />
+    </div>
+
+    <!-- Overview -->
+    <section class="cs-pull-quote">
+      <div class="container">
+        <blockquote>
+          Analytics tools are powerful — but only when users can find the signal in the noise. Makins needed a dashboard that made decisions obvious, not effortful.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- The Challenge -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Challenge</span>
+        <h2 class="cs-section__title">A dashboard drowning<br /><em>in its own data.</em></h2>
+        <p class="cs-body">
+          Makins had grown rapidly, and its dashboard had grown with it — but without direction. Over 40 metrics were displayed simultaneously with no visual hierarchy, no prioritisation, and no way to personalise the view. Power users knew where to look; everyone else was lost.
+        </p>
+
+        <div class="cs-two-col">
+          <div>
+            <h3 class="cs-col__title">The Problem</h3>
+            <p class="cs-col__body">
+              Users spent an average of 4.2 minutes on the dashboard before taking any action. Session recordings showed erratic scrolling, repeated backtracking, and frequent exports to spreadsheets — a sign the tool wasn't answering their real questions.
+            </p>
+          </div>
+          <div>
+            <h3 class="cs-col__title">Design Goals</h3>
+            <ul class="cs-col__list">
+              <li>Reduce time-to-insight to under 2 minutes</li>
+              <li>Surface the three metrics each user cares most about</li>
+              <li>Increase daily active usage by 30%</li>
+              <li>Make onboarding for new users self-serve</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">Research & Discovery</span>
+        <h2 class="cs-section__title">Listening before<br /><em>designing anything.</em></h2>
+        <p class="cs-body">
+          I ran 14 user interviews across three customer segments — founders, marketing managers, and operations leads. Each group had a fundamentally different mental model of what "a good dashboard" meant. Founders wanted high-level health indicators. Ops leads wanted drill-down accuracy. Marketers wanted trend lines.
+        </p>
+        <p class="cs-body">
+          Card-sorting exercises revealed that users grouped information by decision type rather than metric category — a key insight that restructured the entire information architecture.
+        </p>
+
+        <div class="cs-two-col">
+          <div>
+            <h3 class="cs-col__title">Methods Used</h3>
+            <ul class="cs-col__list">
+              <li>14 moderated user interviews</li>
+              <li>Session recording analysis (Hotjar)</li>
+              <li>Card sorting with 20 participants</li>
+              <li>Competitive analysis of 8 dashboards</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="cs-col__title">Key Findings</h3>
+            <ul class="cs-col__list">
+              <li>Users ignored 70% of visible metrics daily</li>
+              <li>Top 3 metrics differed per role</li>
+              <li>Charts without context caused confusion</li>
+              <li>Mobile access was more common than expected</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Solution</span>
+        <h2 class="cs-section__title">Three goals.<br /><em>One clear view.</em></h2>
+        <p class="cs-body">
+          The redesign restructured the dashboard around three core user modes: Monitor, Analyse, and Act. A customisable widget system with smart defaults let users pin the metrics that mattered to them — while a new contextual layer added brief explanations and trend arrows to every key figure.
+        </p>
+        <p class="cs-body">
+          The dark-mode-first visual direction reduced eye strain during extended use sessions and gave the product a strong, distinctive identity in a crowded SaaS market.
+        </p>
+
+        <div class="cs-image">
+          <img src="images/project-1.png" alt="Makins redesigned dashboard" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">Outcomes</span>
+        <h2 class="cs-section__title">Results that<br /><em>moved the needle.</em></h2>
+        <p class="cs-body">
+          Three months post-launch, Makins saw meaningful improvement across every key metric — validating the decision to prioritise clarity over feature density.
+        </p>
+
+        <div class="cs-metrics">
+          <div class="cs-metric">
+            <span class="cs-metric__value">38%</span>
+            <span class="cs-metric__label">Increase in daily active users within 90 days of launch</span>
+          </div>
+          <div class="cs-metric">
+            <span class="cs-metric__value">2 min</span>
+            <span class="cs-metric__label">Average time-to-insight, down from 4.2 minutes</span>
+          </div>
+          <div class="cs-metric">
+            <span class="cs-metric__value">67</span>
+            <span class="cs-metric__label">NPS score post-launch, up from 31</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Next Project -->
+  <div class="cs-next">
+    <div class="container">
+      <a href="project-2.html" class="cs-next__link">
+        <div>
+          <span class="cs-next__label">Next Project</span>
+          <span class="cs-next__title">Goblin — Design System</span>
+        </div>
+        <span class="cs-next__arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© 2025 Promise Olaifa. Designed & built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goblin — Case Study · Promise Olaifa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">PO</a>
+      <div class="nav__right">
+        <ul class="nav__links">
+          <li><a href="index.html#work" class="nav__link">Work</a></li>
+          <li><a href="index.html#about" class="nav__link">About</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="cs-hero">
+      <div class="container">
+        <a href="index.html#work" class="cs-back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7"/>
+          </svg>
+          Back to Work
+        </a>
+
+        <div class="cs-tags">
+          <span class="tag">Design System</span>
+          <span class="tag">Interaction Design</span>
+          <span class="tag">Web App</span>
+        </div>
+
+        <span class="cs-hero__label">Case Study — 02</span>
+        <h1 class="cs-hero__title">Goblin</h1>
+        <p class="cs-hero__desc">
+          Building a scalable design system from scratch to align three product squads and transform how a fast-growing SaaS team ships UI.
+        </p>
+
+        <div class="cs-hero__meta">
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Role</span>
+            <span class="cs-meta-value">Product Designer</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Timeline</span>
+            <span class="cs-meta-value">8 Weeks</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Platform</span>
+            <span class="cs-meta-value">Web · SaaS</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Year</span>
+            <span class="cs-meta-value">2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cover Image -->
+    <div class="cs-cover">
+      <img src="images/project-2.png" alt="Goblin platform interface" />
+    </div>
+
+    <!-- Overview -->
+    <section class="cs-pull-quote">
+      <div class="container">
+        <blockquote>
+          When three squads are building independently, inconsistency isn't a style problem — it's a product problem. Goblin needed a single source of truth to ship with speed and confidence.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- The Challenge -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Challenge</span>
+        <h2 class="cs-section__title">Three squads, three<br /><em>different products.</em></h2>
+        <p class="cs-body">
+          Goblin had scaled from a single product team to three independent squads in under a year. Without a shared system, each squad had built its own components — leading to over 200 divergent UI elements, visual inconsistencies visible to users, and a design-to-dev handoff process that averaged 3 days per feature.
+        </p>
+
+        <div class="cs-two-col">
+          <div>
+            <h3 class="cs-col__title">The Problem</h3>
+            <p class="cs-col__body">
+              Designers were spending 40% of their time rebuilding components that already existed elsewhere. Engineers were making style decisions they shouldn't have had to make. The result was a fragmented product experience that eroded user trust.
+            </p>
+          </div>
+          <div>
+            <h3 class="cs-col__title">Design Goals</h3>
+            <ul class="cs-col__list">
+              <li>Establish one shared Figma component library</li>
+              <li>Reduce handoff time from 3 days to same-day</li>
+              <li>Create a token-based system extensible by engineering</li>
+              <li>Document usage patterns, not just visuals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">Audit & Discovery</span>
+        <h2 class="cs-section__title">Finding what<br /><em>already existed.</em></h2>
+        <p class="cs-body">
+          Before designing anything new, I conducted a full UI audit across all three product surfaces — cataloguing every button, form field, modal, and card variant in use. The audit surfaced 47 distinct button styles and 12 competing type scales. The problem was bigger than expected.
+        </p>
+        <p class="cs-body">
+          I ran collaborative workshops with design and engineering leads from each squad to understand working patterns, pain points, and what "done" looked like. This shaped the system's contribution model as much as its visual language.
+        </p>
+
+        <div class="cs-two-col">
+          <div>
+            <h3 class="cs-col__title">Audit Scope</h3>
+            <ul class="cs-col__list">
+              <li>3 product surfaces reviewed end-to-end</li>
+              <li>200+ existing components catalogued</li>
+              <li>Workshops with 9 cross-functional stakeholders</li>
+              <li>Benchmark review of 5 mature design systems</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="cs-col__title">Key Findings</h3>
+            <ul class="cs-col__list">
+              <li>No shared colour or spacing tokens existed</li>
+              <li>Components were built for context, not reuse</li>
+              <li>Figma files were used as delivery, not source of truth</li>
+              <li>Engineers wanted live usage examples, not just specs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Solution</span>
+        <h2 class="cs-section__title">One library.<br /><em>Every squad.</em></h2>
+        <p class="cs-body">
+          The Goblin Design System launched with 120 production-ready components organised into five tiers: tokens, primitives, components, patterns, and templates. Every component included usage guidelines, accessibility notes, and do/don't examples.
+        </p>
+        <p class="cs-body">
+          A contribution model let individual squads propose additions via a lightweight RFC process — keeping the system alive without creating a bottleneck. The magenta brand accent was applied sparingly through a clear hierarchy, giving the product a distinct visual personality without sacrificing readability.
+        </p>
+
+        <div class="cs-image">
+          <img src="images/project-2.png" alt="Goblin design system components" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">Outcomes</span>
+        <h2 class="cs-section__title">Faster ships,<br /><em>fewer fires.</em></h2>
+        <p class="cs-body">
+          Within three months of launch, all three squads had adopted the system. Design-to-dev handoff that once took days was happening the same afternoon.
+        </p>
+
+        <div class="cs-metrics">
+          <div class="cs-metric">
+            <span class="cs-metric__value">60%</span>
+            <span class="cs-metric__label">Reduction in design-to-dev handoff time across all squads</span>
+          </div>
+          <div class="cs-metric">
+            <span class="cs-metric__value">90%</span>
+            <span class="cs-metric__label">Component adoption rate across product teams in 3 months</span>
+          </div>
+          <div class="cs-metric">
+            <span class="cs-metric__value">120</span>
+            <span class="cs-metric__label">Production-ready components shipped at launch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Next Project -->
+  <div class="cs-next">
+    <div class="container">
+      <a href="project-3.html" class="cs-next__link">
+        <div>
+          <span class="cs-next__label">Next Project</span>
+          <span class="cs-next__title">Tinubu — Fintech Mobile App</span>
+        </div>
+        <span class="cs-next__arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© 2025 Promise Olaifa. Designed & built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

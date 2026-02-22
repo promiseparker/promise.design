@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tinubu — Case Study · Promise Olaifa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">PO</a>
+      <div class="nav__right">
+        <ul class="nav__links">
+          <li><a href="index.html#work" class="nav__link">Work</a></li>
+          <li><a href="index.html#about" class="nav__link">About</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="cs-hero">
+      <div class="container">
+        <a href="index.html#work" class="cs-back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7"/>
+          </svg>
+          Back to Work
+        </a>
+
+        <div class="cs-tags">
+          <span class="tag">Mobile</span>
+          <span class="tag">Fintech</span>
+          <span class="tag">Prototyping</span>
+        </div>
+
+        <span class="cs-hero__label">Case Study — 03</span>
+        <h1 class="cs-hero__title">Tinubu</h1>
+        <p class="cs-hero__desc">
+          Designing a mobile-first personal finance app that makes understanding your money feel simple, human, and trustworthy — not overwhelming.
+        </p>
+
+        <div class="cs-hero__meta">
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Role</span>
+            <span class="cs-meta-value">UX Designer</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Timeline</span>
+            <span class="cs-meta-value">10 Weeks</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Platform</span>
+            <span class="cs-meta-value">iOS · Android</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Year</span>
+            <span class="cs-meta-value">2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cover Image -->
+    <div class="cs-cover">
+      <img src="images/project-3.png" alt="Tinubu mobile app interface" />
+    </div>
+
+    <!-- Overview -->
+    <section class="cs-pull-quote">
+      <div class="container">
+        <blockquote>
+          Money is emotional. People don't just want to see their balance — they want to feel in control of it. Tinubu was designed to create that feeling from the first screen.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- The Challenge -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Challenge</span>
+        <h2 class="cs-section__title">Finance apps that<br /><em>feel like homework.</em></h2>
+        <p class="cs-body">
+          Most personal finance apps overwhelm users with graphs, categories, and budgeting tools before they've had a chance to understand their own financial picture. The result is a 68% drop-off at onboarding and low long-term retention — a pattern repeated across the category.
+        </p>
+
+        <div class="cs-two-col">
+          <div>
+            <h3 class="cs-col__title">The Problem</h3>
+            <p class="cs-col__body">
+              Early user testing revealed that newcomers to Tinubu felt anxious rather than empowered when they first opened the app. The existing flow asked for too much too soon and gave too little clarity in return. Trust was never established.
+            </p>
+          </div>
+          <div>
+            <h3 class="cs-col__title">Design Goals</h3>
+            <ul class="cs-col__list">
+              <li>Increase onboarding completion to above 80%</li>
+              <li>Make total balance the first thing users understand</li>
+              <li>Design for financial anxiety, not financial expertise</li>
+              <li>Keep the core experience to three key screens</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">Research & Discovery</span>
+        <h2 class="cs-section__title">Money diaries &<br /><em>real behaviour.</em></h2>
+        <p class="cs-body">
+          I ran diary studies with 12 participants over two weeks — asking them to note every time they thought about money, checked a balance, or avoided checking one. The data revealed that anxiety, not lack of interest, was the primary barrier to engagement.
+        </p>
+        <p class="cs-body">
+          Follow-up interviews uncovered a consistent pattern: users wanted a single, trusted number first. Everything else — categories, trends, goals — was secondary context they'd seek out when ready.
+        </p>
+
+        <div class="cs-two-col">
+          <div>
+            <h3 class="cs-col__title">Methods Used</h3>
+            <ul class="cs-col__list">
+              <li>2-week diary studies with 12 participants</li>
+              <li>In-depth interviews on financial behaviour</li>
+              <li>Usability testing across 3 prototype rounds</li>
+              <li>Competitive teardown of 6 finance apps</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="cs-col__title">Key Findings</h3>
+            <ul class="cs-col__list">
+              <li>Users checked balance daily but avoided detail</li>
+              <li>Green as a colour consistently signalled safety</li>
+              <li>Complex graphs triggered avoidance, not engagement</li>
+              <li>Trust was built through clarity, not features</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Solution</span>
+        <h2 class="cs-section__title">One number.<br /><em>Total clarity.</em></h2>
+        <p class="cs-body">
+          Tinubu's redesign centres on a single "Total Balance" view with progressive disclosure — the big number is always visible, and detail is one tap away. Green as the primary brand colour was a deliberate trust signal, rooted directly in research findings.
+        </p>
+        <p class="cs-body">
+          Transaction history is surfaced chronologically rather than categorised, reflecting how users actually think about their spending. Growth indicators and active user counts give the dashboard a sense of momentum without requiring manual input.
+        </p>
+
+        <div class="cs-image">
+          <img src="images/project-3.png" alt="Tinubu final interface screens" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">Outcomes</span>
+        <h2 class="cs-section__title">Users who actually<br /><em>come back.</em></h2>
+        <p class="cs-body">
+          Post-launch data confirmed that simplicity was the right bet. Onboarding completion climbed significantly, and daily check-ins became a habit — not a chore.
+        </p>
+
+        <div class="cs-metrics">
+          <div class="cs-metric">
+            <span class="cs-metric__value">74%</span>
+            <span class="cs-metric__label">Increase in onboarding completion rate post-redesign</span>
+          </div>
+          <div class="cs-metric">
+            <span class="cs-metric__value">4.8</span>
+            <span class="cs-metric__label">App Store rating from users in the first 60 days</span>
+          </div>
+          <div class="cs-metric">
+            <span class="cs-metric__value">3×</span>
+            <span class="cs-metric__label">Increase in daily check-ins compared to previous version</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Next Project -->
+  <div class="cs-next">
+    <div class="container">
+      <a href="project-4.html" class="cs-next__link">
+        <div>
+          <span class="cs-next__label">Next Project</span>
+          <span class="cs-next__title">Bingo — End-to-End Fintech</span>
+        </div>
+        <span class="cs-next__arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© 2025 Promise Olaifa. Designed & built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

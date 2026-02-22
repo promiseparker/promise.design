@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bingo — Case Study · Promise Olaifa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">PO</a>
+      <div class="nav__right">
+        <ul class="nav__links">
+          <li><a href="index.html#work" class="nav__link">Work</a></li>
+          <li><a href="index.html#about" class="nav__link">About</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="cs-hero">
+      <div class="container">
+        <a href="index.html#work" class="cs-back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7"/>
+          </svg>
+          Back to Work
+        </a>
+
+        <div class="cs-tags">
+          <span class="tag">Strategy</span>
+          <span class="tag">End-to-End</span>
+          <span class="tag">Fintech</span>
+        </div>
+
+        <span class="cs-hero__label">Case Study — 04</span>
+        <h1 class="cs-hero__title">Bingo</h1>
+        <p class="cs-hero__desc">
+          Leading the end-to-end design of a bold fintech product — from brand identity and information architecture through to high-fidelity UI and a successful App Store launch.
+        </p>
+
+        <div class="cs-hero__meta">
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Role</span>
+            <span class="cs-meta-value">Lead Product Designer</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Timeline</span>
+            <span class="cs-meta-value">16 Weeks</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Platform</span>
+            <span class="cs-meta-value">iOS · Android</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Year</span>
+            <span class="cs-meta-value">2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cover Image -->
+    <div class="cs-cover">
+      <img src="images/project-4.png" alt="Bingo mobile app interface" />
+    </div>
+
+    <!-- Overview -->
+    <section class="cs-pull-quote">
+      <div class="container">
+        <blockquote>
+          A new fintech product doesn't just need to work — it needs a reason to exist. Bingo was designed with a distinct point of view: fast, bold, and built for people who expect more from their money.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- The Challenge -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Challenge</span>
+        <h2 class="cs-section__title">Standing out in<br /><em>a crowded space.</em></h2>
+        <p class="cs-body">
+          The fintech market is saturated. Dozens of apps offer the same core features — send, receive, track, save. For Bingo to carve out a meaningful position, the product needed to feel distinctly different from day one: not just visually, but in the way it moved, responded, and talked to its users.
+        </p>
+
+        <div class="cs-two-col">
+          <div>
+            <h3 class="cs-col__title">The Problem</h3>
+            <p class="cs-col__body">
+              The founding team had a clear market thesis but no design language, no validated user flows, and no component foundation. Everything needed to be built — and it needed to be built fast, without sacrificing quality or coherence.
+            </p>
+          </div>
+          <div>
+            <h3 class="cs-col__title">Design Goals</h3>
+            <ul class="cs-col__list">
+              <li>Define a distinct visual identity from scratch</li>
+              <li>Design core flows completable in under 3 taps</li>
+              <li>Build a component system alongside the product</li>
+              <li>Ship to App Store within 4 months</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">Strategy & Research</span>
+        <h2 class="cs-section__title">Defining the space<br /><em>before filling it.</em></h2>
+        <p class="cs-body">
+          I began with a competitive teardown of 12 fintech apps — mapping their onboarding flows, interaction patterns, and visual language. The goal wasn't to copy the best, but to identify where the entire category was making the same wrong assumptions.
+        </p>
+        <p class="cs-body">
+          A brand workshop with the founding team established the product's personality: bold, trustworthy, and fast. Purple emerged from multiple iterations as the anchor colour — energetic without being reckless, modern without feeling cold.
+        </p>
+
+        <div class="cs-two-col">
+          <div>
+            <h3 class="cs-col__title">Research Methods</h3>
+            <ul class="cs-col__list">
+              <li>Competitive teardown of 12 fintech apps</li>
+              <li>Brand positioning workshop with founders</li>
+              <li>3 rounds of usability testing on prototypes</li>
+              <li>20 concept interviews with target users</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="cs-col__title">Strategic Decisions</h3>
+            <ul class="cs-col__list">
+              <li>Card-first UI to mirror how users think about money</li>
+              <li>Colour as the primary brand differentiator</li>
+              <li>Speed as a core UX principle, not a nice-to-have</li>
+              <li>Transparency in every transaction display</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Solution</span>
+        <h2 class="cs-section__title">Bold by design.<br /><em>Fast by principle.</em></h2>
+        <p class="cs-body">
+          Bingo launched with a purple identity that felt premium and distinctive. The card-first transaction layout mapped directly to how users mentally organise their finances — each transaction a clear, readable row with no ambiguity about direction or amount.
+        </p>
+        <p class="cs-body">
+          Every primary action was designed to require no more than three taps. Motion design reinforced a sense of speed and responsiveness throughout — the app didn't just look fast, it felt fast. Components were built in parallel with screens, giving engineering a system they could confidently build from day one.
+        </p>
+
+        <div class="cs-image">
+          <img src="images/project-4.png" alt="Bingo final app screens" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">Outcomes</span>
+        <h2 class="cs-section__title">Shipped, loved,<br /><em>featured.</em></h2>
+        <p class="cs-body">
+          Bingo launched on schedule and surpassed early download targets within the first week — a result of a design process that balanced speed with rigour.
+        </p>
+
+        <div class="cs-metrics">
+          <div class="cs-metric">
+            <span class="cs-metric__value">4 mo</span>
+            <span class="cs-metric__label">From blank canvas to App Store launch, on schedule</span>
+          </div>
+          <div class="cs-metric">
+            <span class="cs-metric__value">10K</span>
+            <span class="cs-metric__label">Downloads in the first week post-launch</span>
+          </div>
+          <div class="cs-metric">
+            <span class="cs-metric__value">★ Featured</span>
+            <span class="cs-metric__label">App Store "New Apps We Love" in week one</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Next Project -->
+  <div class="cs-next">
+    <div class="container">
+      <a href="project-1.html" class="cs-next__link">
+        <div>
+          <span class="cs-next__label">Back to First Project</span>
+          <span class="cs-next__title">Makins — SaaS Dashboard</span>
+        </div>
+        <span class="cs-next__arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© 2025 Promise Olaifa. Designed & built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
