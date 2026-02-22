@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">PO</a>
@@ -48,15 +47,15 @@
         </a>
 
         <div class="cs-tags">
-          <span class="tag">UX Research</span>
-          <span class="tag">Product Design</span>
-          <span class="tag">Mobile App</span>
+          <span class="tag">UX Redesign</span>
+          <span class="tag">Mobile</span>
+          <span class="tag">Speculative</span>
         </div>
 
         <span class="cs-hero__label">Case Study — 01</span>
         <h1 class="cs-hero__title">Bayse UX-Improvement</h1>
         <p class="cs-hero__desc">
-          Redesigning the core experience of Bayse — a Nigerian prediction market app — to make discovering, understanding, and placing trades faster and more intuitive.
+          I downloaded Bayse, used it for a week, and found 10 real problems hurting users and revenue. This is what I fixed — and exactly why each change matters.
         </p>
 
         <div class="cs-hero__meta">
@@ -65,8 +64,8 @@
             <span class="cs-meta-value">Product Designer</span>
           </div>
           <div class="cs-hero__meta-item">
-            <span class="cs-meta-label">Timeline</span>
-            <span class="cs-meta-value">8 Weeks</span>
+            <span class="cs-meta-label">Type</span>
+            <span class="cs-meta-value">Speculative Redesign</span>
           </div>
           <div class="cs-hero__meta-item">
             <span class="cs-meta-label">Platform</span>
@@ -74,129 +73,512 @@
           </div>
           <div class="cs-hero__meta-item">
             <span class="cs-meta-label">Year</span>
-            <span class="cs-meta-value">2024</span>
+            <span class="cs-meta-value">2025</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Cover Image -->
+    <!-- Cover -->
     <div class="cs-cover">
-      <img src="images/project-1.png" alt="Bayse prediction market app interface" />
+      <img src="images/project-1.png" alt="Bayse redesigned home screen" />
     </div>
 
-    <!-- Overview -->
+    <!-- Context -->
     <section class="cs-pull-quote">
       <div class="container">
         <blockquote>
-          Prediction markets are only as powerful as their UX. If users can't find a market, understand the odds, or place a trade with confidence — the product fails, no matter how smart the underlying platform is.
+          Bayse lets Nigerians trade on real-world outcomes — elections, appointments, sports, culture. Like the stock market, but for things people actually argue about. A job posting brought me to the app. What I found made me redesign it.
         </blockquote>
       </div>
     </section>
 
-    <!-- The Challenge -->
+    <!-- Brief -->
     <section class="cs-section">
       <div class="container">
-        <span class="cs-section__label">The Challenge</span>
-        <h2 class="cs-section__title">A powerful product<br /><em>users couldn't navigate.</em></h2>
+        <span class="cs-section__label">The Brief</span>
+        <h2 class="cs-section__title">A job opening became<br /><em>a design audit.</em></h2>
         <p class="cs-body">
-          Bayse is a Nigerian prediction market app that lets users trade on real-world outcomes — from politics and sports to crypto and social media. The platform had strong content and an engaged niche community, but a UX that made discovery difficult and the trade flow confusing for new users.
+          Bayse (formerly GoWagr) posted a product designer role on social media. Instead of sending a generic portfolio, I downloaded the app, used it as a real user would, and documented every friction point I hit. Within a week I had 10 specific problems — each one a barrier between the user and a trade, and between Bayse and revenue.
+        </p>
+        <p class="cs-body">
+          This is a speculative redesign. Nothing here is decoration. Every screen change is a direct response to a specific problem in the existing app, tied to a real user outcome and a business case. Target users: Nigerians, ages 15–80. Competitors studied: Polymarket, Kalshi.
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================
+         IMPROVEMENT 01
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">01</div>
+        <span class="cs-section__label">Readability, Search & Visual Consistency</span>
+        <h2 class="cs-section__title">The app was unreadable<br /><em>in places. Literally.</em></h2>
+        <p class="cs-body">
+          The old UI had font sizes as small as 9px. Market names, trade counts, and volume figures — the information users need to decide whether to trade — were barely legible. Colour usage was inconsistent across screens, and there was no search button on the homepage. If you came in looking for a specific market, your only option was to scroll.
         </p>
 
-        <div class="cs-two-col">
+        <div class="cs-compare">
           <div>
-            <h3 class="cs-col__title">The Problem</h3>
-            <p class="cs-col__body">
-              New users arriving on the home screen struggled to understand what Bayse was and how to participate. The navigation categories (Updates, Leaderboard, Prediction Market, How to Deposit) weren't intuitive, and the market feed lacked the context needed to make confident trades.
-            </p>
+            <span class="cs-compare__badge cs-compare__badge--before">Before</span>
+            <div class="cs-compare__img">
+              <img src="images/Bayse1%20old.png" alt="Old home screen with small fonts and no search" />
+            </div>
+            <p class="cs-compare__caption">9px font sizes, inconsistent layout, no search bar visible</p>
           </div>
           <div>
-            <h3 class="cs-col__title">Design Goals</h3>
-            <ul class="cs-col__list">
-              <li>Reduce time from open to first trade placed</li>
-              <li>Make market categories immediately scannable</li>
-              <li>Clarify Yes/No odds display for new users</li>
-              <li>Improve onboarding and first-session retention</li>
-            </ul>
+            <span class="cs-compare__badge cs-compare__badge--after">After</span>
+            <div class="cs-compare__img">
+              <img src="images/bayse-new-12.png" alt="New search and browse screen" />
+            </div>
+            <p class="cs-compare__caption">Minimum 11px across the app. Search + Browse with clear topic categories</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">User Impact</span>
+              <span class="cs-impact__text">Users can read every market clearly. Anyone searching for "AFCON" or "CBN" finds it in seconds instead of scrolling until they give up.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Revenue Impact</span>
+              <span class="cs-impact__text">Users who can't read what they're trading on won't trade. A search bar converts intent into action — a user who came in with a specific market in mind now has a direct path to it.</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Research -->
-    <section class="cs-section">
+    <!-- =====================
+         IMPROVEMENT 02
+    ====================== -->
+    <section class="cs-improvement">
       <div class="container">
-        <span class="cs-section__label">Research & Discovery</span>
-        <h2 class="cs-section__title">Understanding the<br /><em>prediction mindset.</em></h2>
+        <div class="cs-improvement__num">02</div>
+        <span class="cs-section__label">Smarter Buy Flow — Balance Awareness & Deposit CTA</span>
+        <h2 class="cs-section__title">The Review button<br /><em>was lying to users.</em></h2>
         <p class="cs-body">
-          I conducted usability testing sessions with both existing Bayse users and people unfamiliar with prediction markets. The sessions revealed two distinct mental models: experienced users who thought in terms of odds and volume, and newcomers who simply wanted to back their opinion on familiar topics like Nigerian politics and football.
+          This was the biggest flow-breaking bug in the app. A user with ₦490 in their account could type ₦1,500, see "Insufficient Funds" on screen, and still tap the active "Review" button — going through the entire review flow only to hit a wall at the end. A completely pointless journey that ends in frustration and a closed app.
         </p>
         <p class="cs-body">
-          A competitive review of global prediction market apps — including Polymarket and Kalshi — helped identify patterns in market card design, odds presentation, and category navigation that could be adapted for the Bayse audience.
+          The fix is precise: if you don't have enough, the Review button is disabled. You're told exactly how much more you need, and there's a "Deposit" button right there — at the moment you want to spend money — to add funds instantly.
         </p>
 
-        <div class="cs-two-col">
+        <div class="cs-compare">
           <div>
-            <h3 class="cs-col__title">Methods Used</h3>
-            <ul class="cs-col__list">
-              <li>Moderated usability testing (8 sessions)</li>
-              <li>First-click testing on navigation patterns</li>
-              <li>Competitive analysis of 5 prediction apps</li>
-              <li>User interviews on trade decision-making</li>
-            </ul>
+            <span class="cs-compare__badge cs-compare__badge--before">Before</span>
+            <div class="cs-compare__img">
+              <img src="images/Bayse5%20old.png" alt="Old buy flow with active Review button despite insufficient funds" />
+            </div>
+            <p class="cs-compare__caption">"Insufficient Funds" shown — but the Review button is still active and tappable</p>
           </div>
           <div>
-            <h3 class="cs-col__title">Key Findings</h3>
-            <ul class="cs-col__list">
-              <li>Users skipped the category nav — fed by the stream</li>
-              <li>Yes/No pricing wasn't understood by first-timers</li>
-              <li>Social context (trades, volume) built confidence</li>
-              <li>Trending tab was the most valuable entry point</li>
-            </ul>
+            <span class="cs-compare__badge cs-compare__badge--after">After</span>
+            <div class="cs-compare__img">
+              <img src="images/bayse-new-13.png" alt="New buy flow with disabled Review and Deposit CTA" />
+            </div>
+            <p class="cs-compare__caption">Review Order greyed out. "Not enough balance" + "+ Deposit ₦10 to continue" CTA right there</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">User Impact</span>
+              <span class="cs-impact__text">Users are never sent down a path they can't complete. No wasted journeys. If you can't afford it, you know immediately — and you're given the next step, not a dead end.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Revenue Impact</span>
+              <span class="cs-impact__text">This is direct revenue recovery. In the old flow, a user without enough balance almost certainly closes the app. In the new flow, they're one tap from depositing — caught at the exact moment they want to spend. Every recovered deposit is recovered revenue.</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Solution -->
-    <section class="cs-section">
+    <!-- =====================
+         IMPROVEMENT 03
+    ====================== -->
+    <section class="cs-improvement">
       <div class="container">
-        <span class="cs-section__label">The Solution</span>
-        <h2 class="cs-section__title">Clarity first,<br /><em>then confidence.</em></h2>
+        <div class="cs-improvement__num">03</div>
+        <span class="cs-section__label">"To Win" Section — Potential Gains Before Buying</span>
+        <h2 class="cs-section__title">Show them<br /><em>the money.</em></h2>
         <p class="cs-body">
-          The redesign prioritised the home feed as the primary discovery surface — elevating the Trending tab and adding clearer market cards that showed trade volume, end conditions, and simplified Yes/No pricing. Category icons were redesigned with clearer labels and a horizontal scroll that didn't compete with the feed.
-        </p>
-        <p class="cs-body">
-          A balance indicator (₦10,990) was made persistent at the top of every screen — a small change that had an outsized impact on how safe and in-control users felt while browsing markets.
+          The old buy flow showed "Payout if you're right: ₦842" — buried, small, and easy to overlook. The new design replaces it with a prominent green "To win" section that shows ₦21,000 with +100% return in bold before the user confirms anything. The balance remaining after the trade (₦990) is shown too, so there are no surprises.
         </p>
 
-        <div class="cs-image">
-          <img src="images/project-1.png" alt="Bayse redesigned home feed and market cards" />
+        <div class="cs-compare">
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--before">Before</span>
+            <div class="cs-compare__img">
+              <img src="images/Bayse6%20old.png" alt="Old buy flow with small payout text" />
+            </div>
+            <p class="cs-compare__caption">"Payout if you're right: ₦842" — easy to miss, no visual emphasis</p>
+          </div>
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--after">After</span>
+            <div class="cs-compare__img">
+              <img src="images/bayse-new-14.png" alt="New buy flow with To Win section showing ₦21,000 +100%" />
+            </div>
+            <p class="cs-compare__caption">Green "To win" card: ₦21,000 · +100% · Balance after shown. Hard to miss, impossible to misread</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">User Impact</span>
+              <span class="cs-impact__text">Users know exactly what they stand to gain before committing. No guessing, no anxiety. The green colour and the money illustration make the potential feel real and exciting.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Revenue Impact</span>
+              <span class="cs-impact__text">Showing "+100% return" in green triggers excitement and accelerates the decision to trade. Displaying potential gains before purchase is one of the highest-ROI UX changes a trading platform can make — it's the same reason every investment app leads with returns.</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Outcomes -->
+    <!-- =====================
+         IMPROVEMENT 04
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">04</div>
+        <span class="cs-section__label">Plain Language Explanation for Beginners</span>
+        <h2 class="cs-section__title">Not everyone knows what<br /><em>₦49 per share means.</em></h2>
+        <p class="cs-body">
+          Bayse's target audience is Nigerians aged 15–80. Most of them have never used a prediction market. The old app gave them prices and percentages with no explanation of what was actually happening. The redesign adds a plain English breakdown directly below the "To win" section — no jargon, no assumptions.
+        </p>
+
+        <div class="cs-compare cs-compare--after-only">
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--after">New Design</span>
+            <div class="cs-compare__img">
+              <img src="images/bayse-new-15.png" alt="Buy flow with plain language explanation" />
+            </div>
+            <p class="cs-compare__caption">"You're buying 110 Yes shares of Atiku Abubakar at ₦49 each. If this outcome happens, you get ₦100 per share back — that's ₦11,000 profit." Anyone can understand that.</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">User Impact</span>
+              <span class="cs-impact__text">A 15-year-old or a 70-year-old can understand exactly what they're agreeing to. The difference between "I don't get this app" and "Oh — I could make ₦11,000 if Atiku wins" is one sentence.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Revenue Impact</span>
+              <span class="cs-impact__text">This expands Bayse's total addressable market. Right now only people who already understand prediction markets feel confident trading. With plain language, Bayse can convert first-timers — which is where most of the untapped growth lives.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         IMPROVEMENT 05
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">05</div>
+        <span class="cs-section__label">Buy/Sell Toggle + Market/Limit Toggle</span>
+        <h2 class="cs-section__title">Buy or Sell? Market or Limit?<br /><em>Make it impossible to get wrong.</em></h2>
+        <p class="cs-body">
+          The old buy sheet had a Buy/Sell toggle but nothing else. No distinction between market and limit orders. The new design adds a clean second toggle — Market / Limit — on the right side of the header. Buy is blue. Sell is red. The colour coding does the work before the user even reads the label. Switching to Limit reveals a dedicated Limit Price field, keeping the interface uncluttered until it's needed.
+        </p>
+
+        <div class="cs-screen-row">
+          <div class="cs-screen-row__item">
+            <img src="images/bayse-new-14.png" alt="Buy Market flow" />
+            <p class="cs-screen-row__caption">Buy · Market — blue chip, Market/Limit toggle on the right</p>
+          </div>
+          <div class="cs-screen-row__item">
+            <img src="images/bayse-new-16.png" alt="Buy No side selected" />
+            <p class="cs-screen-row__caption">Buy · No — red chip makes the selection unmistakable</p>
+          </div>
+          <div class="cs-screen-row__item">
+            <img src="images/bayse-new-17.png" alt="Limit order screen" />
+            <p class="cs-screen-row__caption">Limit order — Limit Price field appears only when needed</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">User Impact</span>
+              <span class="cs-impact__text">Users never accidentally sell when they meant to buy — the red on Sell acts as a natural warning. The interface is unambiguous at every state.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Revenue Impact</span>
+              <span class="cs-impact__text">Fewer accidental trades means fewer support requests and fewer refund claims. Limit orders being accessible encourages sophisticated trading, which increases platform liquidity and overall trade volume.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         IMPROVEMENT 06
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">06</div>
+        <span class="cs-section__label">Sell Flow — Empty State, Share Count & Instant Sell Access</span>
+        <h2 class="cs-section__title">Don't let users<br /><em>chase their own tail.</em></h2>
+        <p class="cs-body">
+          The old sell flow had no protection. A user with no shares could input an amount, tap Review, and go through the whole flow for nothing. There was also no way to see how many shares you owned from the market card itself — you had to dig. The redesign fixes both.
+        </p>
+        <p class="cs-body">
+          If you have no shares: you see a clear empty state — "No shares to sell. You don't own any Yes shares for Atiku Abubakar" — with a "Switch to Buy" button. If you do own shares: you see exactly how many, their current value, and percentage-based sell chips (10%, 25%, 50%, 75%, 100%) that make choosing an amount immediate.
+        </p>
+
+        <div class="cs-compare">
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--before">Before</span>
+            <div class="cs-compare__img">
+              <img src="images/Bayse7%20old.png" alt="Old sell flow showing 0 shares with Review button still active" />
+            </div>
+            <p class="cs-compare__caption">0 shares — "You'll Receive: ₦0" with no explanation. The Review button stays active, letting users start a flow that goes nowhere</p>
+          </div>
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--after">After</span>
+            <div class="cs-compare__img">
+              <img src="images/bayse-new-18.png" alt="New sell empty state — no shares, Switch to Buy CTA" />
+            </div>
+            <p class="cs-compare__caption">"No shares to sell" — clear message, Review greyed out, Switch to Buy CTA. Dead end turned into an opportunity</p>
+          </div>
+        </div>
+
+        <div class="cs-screen-row">
+          <div class="cs-screen-row__item">
+            <img src="images/bayse-new-19.png" alt="Sell flow showing shares owned" />
+            <p class="cs-screen-row__caption">You own 110 Yes shares · Current value ₦18,340 — see everything before deciding</p>
+          </div>
+          <div class="cs-screen-row__item">
+            <img src="images/bayse-new-20.png" alt="Sell flow with To Receive amount" />
+            <p class="cs-screen-row__caption">Selling 25 shares → "To receive ₦15,420 +80%" — same green card logic as the buy flow</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">User Impact</span>
+              <span class="cs-impact__text">Users are never allowed to do something pointless. The app always gives them a next step — either sell their shares or switch to buying. No confusion, no wasted time.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Revenue Impact</span>
+              <span class="cs-impact__text">The "Switch to Buy" button on the empty state turns a dead end into a sales moment. The faster a user can sell and reinvest, the more active the trading cycle — and the more revenue Bayse earns per session.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         IMPROVEMENT 07
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">07</div>
+        <span class="cs-section__label">Review Order Screen — Full Transparency</span>
+        <h2 class="cs-section__title">Every number, one screen.<br /><em>No surprises at confirmation.</em></h2>
+        <p class="cs-body">
+          The old Review screen showed the basics. The new one shows everything — side-by-side Spending vs Payout, what you picked, the current price, your average buy price, fees (₦0.00), estimated shares, and exact profit if your pick wins. The zero-fee line isn't just informative — it's a competitive advantage shown at the highest-intent moment in the entire flow.
+        </p>
+
+        <div class="cs-compare">
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--before">Before</span>
+            <div class="cs-compare__img">
+              <img src="images/Bayse8%20old.png" alt="Old buy order review screen" />
+            </div>
+            <p class="cs-compare__caption">Spending and payout shown with equal visual weight — the return potential doesn't stand out. The zero-fee advantage sits silently in a table row instead of being used as the trust signal it is</p>
+          </div>
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--after">After</span>
+            <div class="cs-compare__img">
+              <img src="images/bayse-new-21.png" alt="New buy review order screen" />
+            </div>
+            <p class="cs-compare__caption">Spending ₦5,000 → Payout ₦30,000 (+80%). Fee: ₦0.00. "Zero trading fee on Bayse" — shown at exactly the right moment</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">User Impact</span>
+              <span class="cs-impact__text">Complete trust. Users see zero fees, the exact outcome if they're right, and every detail of the order before committing. Nothing to second-guess.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Revenue Impact</span>
+              <span class="cs-impact__text">Transparency at the review stage is what converts hesitation into confirmation. A user who trusts the platform deposits more over time — lifetime value is built here, not at the marketing stage.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         IMPROVEMENT 08
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">08</div>
+        <span class="cs-section__label">Consolidated Market Rules, Timeline & Payout</span>
+        <h2 class="cs-section__title">Scattered rules<br /><em>are unread rules.</em></h2>
+        <p class="cs-body">
+          The old detail page spread market rules, timelines, and payout information across multiple sections that required scrolling and tapping "Show full details" to access. Users had to piece together the answer to a simple question: "When do I get paid if I'm right?" The new design consolidates everything into a single bottom sheet — Market Summary, Rules, Verification Source, Timeline, and Payout — with a dropdown to select the specific outcome you're interested in.
+        </p>
+
+        <div class="cs-compare">
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--before">Before</span>
+            <div class="cs-compare__img">
+              <img src="images/Bayse3%20old.png" alt="Old market detail with scattered rules" />
+            </div>
+            <p class="cs-compare__caption">Rules section visible but collapsed behind "Show full details" — timeline is on a separate section further down</p>
+          </div>
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--after">After</span>
+            <div class="cs-compare__img">
+              <img src="images/bayse-new-9.png" alt="New consolidated market rules bottom sheet" />
+            </div>
+            <p class="cs-compare__caption">One bottom sheet: Market Summary → Rules → Verification Source (punch.ng) → Timeline → Payout. Outcome selector at the top.</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">User Impact</span>
+              <span class="cs-impact__text">Every question a user has before placing a trade — what are the rules, who decides, when do I get paid — is answered in one place, in one scroll. No hunting.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Revenue Impact</span>
+              <span class="cs-impact__text">Informed users bet bigger. Doubt creates small trades or no trades. Clear rules, a named verification source (Punch Nigeria), and a concrete payout timeline (4–12 hours) build the confidence needed for higher trade values.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         IMPROVEMENT 09
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">09</div>
+        <span class="cs-section__label">Related Markets — "People Are Also Trading"</span>
+        <h2 class="cs-section__title">Keep them<br /><em>in the market.</em></h2>
+        <p class="cs-body">
+          After reading a market, the old app had no way to discover related ones without going back to the feed. The redesign adds a "People are also trading" section that surfaces related markets with thumbnails, titles, and chance percentages. If you're reading about the ADC presidential candidate, you're probably also interested in governor defections, party switches, and Tinubu's next move.
+        </p>
+
+        <div class="cs-compare">
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--before">Before</span>
+            <div class="cs-compare__img">
+              <img src="images/Bayse4%20old.png" alt="Old related markets section" />
+            </div>
+            <p class="cs-compare__caption">Related Markets tab exists but is passive — no visual pull, no trade counts visible at a glance</p>
+          </div>
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--after">After</span>
+            <div class="cs-compare__img">
+              <img src="images/bayse-new-8.png" alt="New People are also trading section" />
+            </div>
+            <p class="cs-compare__caption">"People are also trading" — inline, visually active, with thumbnails and chance percentages. Each card is a potential next trade.</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">User Impact</span>
+              <span class="cs-impact__text">Users discover markets without going back to search. The session continues naturally — one market leads to the next, the way a good feed should work.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Revenue Impact</span>
+              <span class="cs-impact__text">This is cross-selling — the same principle Amazon uses with "Customers also bought." Every related market a user clicks is a potential trade. More trades per session equals more revenue per user.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         IMPROVEMENT 10
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">10</div>
+        <span class="cs-section__label">Comments & Social Engagement</span>
+        <h2 class="cs-section__title">Opinions are<br /><em>part of the bet.</em></h2>
+        <p class="cs-body">
+          Prediction markets are social by nature — half the fun is arguing your position. The old app had no community layer. The new design adds a comments section where users discuss their reasoning, share information, and challenge each other's takes. Usernames show trade size badges (e.g. "2.4K Atiku"), making the community feel like informed participants, not anonymous noise.
+        </p>
+
+        <div class="cs-compare">
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--before">Before</span>
+            <div class="cs-compare__img">
+              <img src="images/Bayse2%20old.png" alt="Old market detail — no comments" />
+            </div>
+            <p class="cs-compare__caption">Market detail ends after the chart and buy/sell options — no community, no discussion, no reason to come back without a new trade to place</p>
+          </div>
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--after">After</span>
+            <div class="cs-compare__img">
+              <img src="images/bayse-new-7.png" alt="New comments section" />
+            </div>
+            <p class="cs-compare__caption">@lagospredict, @betwise_ng, @tradeking99 discussing the ADC race. Trade badges show how much skin each commenter has in the game.</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">User Impact</span>
+              <span class="cs-impact__text">Trading becomes social. Users come back not just to place trades but to see what others are saying, defend their position, and react to new information. The app gets stickier with every comment thread.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Revenue Impact</span>
+              <span class="cs-impact__text">Social features consistently drive 2–3× higher retention on trading platforms. More time in the app means more exposure to markets, which means more trades. DAU goes up. Revenue follows.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing -->
     <section class="cs-section">
       <div class="container">
-        <span class="cs-section__label">Outcomes</span>
-        <h2 class="cs-section__title">More users trading,<br /><em>sooner.</em></h2>
+        <span class="cs-section__label">The Takeaway</span>
+        <h2 class="cs-section__title">Good UX isn't decoration.<br /><em>It's a revenue engine.</em></h2>
         <p class="cs-body">
-          Post-redesign testing showed significant improvements in first-session engagement and trade conversion — confirming that clarity, not more features, was the lever that mattered.
+          Every one of these 10 changes ties directly to the same two outcomes: make it easier for users to trade, and make more money for Bayse. The fixes range from a single button state (disabling Review when funds are insufficient) to a full feature addition (Comments). But none of them are cosmetic. Each one removes a specific reason a user might stop, leave, or lose trust — and replaces it with a reason to stay and trade.
+        </p>
+        <p class="cs-body">
+          Bayse has a real product with real traction. The underlying idea — prediction markets built for Nigerian culture — is strong. What it needs is a UX that matches that ambition. This redesign is my argument for what that looks like.
         </p>
 
         <div class="cs-metrics">
           <div class="cs-metric">
-            <span class="cs-metric__value">43%</span>
-            <span class="cs-metric__label">Increase in first-session trade conversion rate</span>
+            <span class="cs-metric__value">10</span>
+            <span class="cs-metric__label">Specific UX problems identified and solved across the full app</span>
           </div>
           <div class="cs-metric">
-            <span class="cs-metric__value">2×</span>
-            <span class="cs-metric__label">Improvement in new user retention after 7 days</span>
+            <span class="cs-metric__value">3</span>
+            <span class="cs-metric__label">Core flows redesigned end-to-end: Buy, Sell, and Market Detail</span>
           </div>
           <div class="cs-metric">
-            <span class="cs-metric__value">↑ 196</span>
-            <span class="cs-metric__label">Active daily trades tracked post-launch on redesigned feed</span>
+            <span class="cs-metric__value">0→1</span>
+            <span class="cs-metric__label">Features built from scratch: Search, Comments, Sell Empty State, Plain Language</span>
           </div>
         </div>
       </div>
@@ -217,7 +599,6 @@
     </div>
   </div>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p class="footer__text">© 2025 Promise Olaifa. Designed & built with care.</p>
