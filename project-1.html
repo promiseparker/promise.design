@@ -330,10 +330,10 @@
         <span class="cs-section__label">Sell Flow — Empty State, Share Count & Instant Sell Access</span>
         <h2 class="cs-section__title">Don't let users<br /><em>chase their own tail.</em></h2>
         <p class="cs-body">
-          The old sell flow had no protection. A user with no shares could input an amount, tap Review, and go through the whole flow for nothing. There was also no way to see how many shares you owned from the market card itself — you had to dig. The redesign fixes both.
+          The old sell flow had no protection. A user with no shares could input an amount, tap Review, and go through the whole flow for nothing. There was also no way to see how many shares you owned from the market card itself — you had to dig into a separate screen to find out. The redesign fixes all of this.
         </p>
         <p class="cs-body">
-          If you have no shares: you see a clear empty state — "No shares to sell. You don't own any Yes shares for Atiku Abubakar" — with a "Switch to Buy" button. If you do own shares: you see exactly how many, their current value, and percentage-based sell chips (10%, 25%, 50%, 75%, 100%) that make choosing an amount immediate.
+          If you own shares, your position is now visible directly on the market card — "Yes · 8 shares" inline next to the candidate — with a "Sell X Yes shares" button right there. No navigation required. If you have no shares: a clear empty state with a "Switch to Buy" CTA. If you do own shares: you see exactly how many, their current value, and percentage-based sell chips (10%, 25%, 50%, 75%, 100%) that make choosing an amount immediate.
         </p>
 
         <div class="cs-compare">
@@ -355,8 +355,12 @@
 
         <div class="cs-screen-row">
           <div class="cs-screen-row__item">
+            <img src="images/bayse-new-6.png" alt="Market card showing position badge and Sell button inline" />
+            <p class="cs-screen-row__caption">Position visible on the market card — "Sell 10 Yes shares" appears inline. No extra navigation needed</p>
+          </div>
+          <div class="cs-screen-row__item">
             <img src="images/bayse-new-19.png" alt="Sell flow showing shares owned" />
-            <p class="cs-screen-row__caption">You own 110 Yes shares · Current value ₦18,340 — see everything before deciding</p>
+            <p class="cs-screen-row__caption">You own 110 Yes shares · Current value ₦18,340 — everything visible before deciding</p>
           </div>
           <div class="cs-screen-row__item">
             <img src="images/bayse-new-20.png" alt="Sell flow with To Receive amount" />
@@ -368,11 +372,11 @@
           <div class="cs-impact__row">
             <div>
               <span class="cs-impact__label">User Impact</span>
-              <span class="cs-impact__text">Users are never allowed to do something pointless. The app always gives them a next step — either sell their shares or switch to buying. No confusion, no wasted time.</span>
+              <span class="cs-impact__text">Users always know where they stand. Position is visible without digging, selling takes one tap from the market card, and dead ends are replaced with clear next steps. No confusion, no wasted flow.</span>
             </div>
             <div>
               <span class="cs-impact__label">Revenue Impact</span>
-              <span class="cs-impact__text">The "Switch to Buy" button on the empty state turns a dead end into a sales moment. The faster a user can sell and reinvest, the more active the trading cycle — and the more revenue Bayse earns per session.</span>
+              <span class="cs-impact__text">Faster sell access means faster reinvestment. The "Switch to Buy" button on the empty state turns a dead end into a sales moment. Every removed friction point between a user and their next trade is revenue recovered.</span>
             </div>
           </div>
         </div>
@@ -385,10 +389,10 @@
     <section class="cs-improvement">
       <div class="container">
         <div class="cs-improvement__num">07</div>
-        <span class="cs-section__label">Review Order Screen — Full Transparency</span>
-        <h2 class="cs-section__title">Every number, one screen.<br /><em>No surprises at confirmation.</em></h2>
+        <span class="cs-section__label">Review Order Screen — Redesigned to Match the New Direction</span>
+        <h2 class="cs-section__title">Same information.<br /><em>Redesigned to feel like it belongs.</em></h2>
         <p class="cs-body">
-          The old Review screen showed the basics. The new one shows everything — side-by-side Spending vs Payout, what you picked, the current price, your average buy price, fees (₦0.00), estimated shares, and exact profit if your pick wins. The zero-fee line isn't just informative — it's a competitive advantage shown at the highest-intent moment in the entire flow.
+          The information on the old Review screen was already good — Spending, Payout, fees, estimated shares, profit if correct. The problem wasn't what was there, it was how it looked. The old layout was flat and transactional, visually disconnected from the redesigned buy flow it sat at the end of. This was about bringing it into line: giving Payout the visual dominance it deserves, surfacing the zero-fee message as a confidence signal rather than a quiet table row, and making the whole screen feel like it was designed at the same time as everything else.
         </p>
 
         <div class="cs-compare">
@@ -397,14 +401,14 @@
             <div class="cs-compare__img">
               <img src="images/Bayse8%20old.png" alt="Old buy order review screen" />
             </div>
-            <p class="cs-compare__caption">Spending and payout shown with equal visual weight — the return potential doesn't stand out. The zero-fee advantage sits silently in a table row instead of being used as the trust signal it is</p>
+            <p class="cs-compare__caption">All the right data — but Spending and Payout share equal visual weight, and the zero-fee advantage sits silently in a table row</p>
           </div>
           <div>
             <span class="cs-compare__badge cs-compare__badge--after">After</span>
             <div class="cs-compare__img">
               <img src="images/bayse-new-21.png" alt="New buy review order screen" />
             </div>
-            <p class="cs-compare__caption">Spending ₦5,000 → Payout ₦30,000 (+80%). Fee: ₦0.00. "Zero trading fee on Bayse" — shown at exactly the right moment</p>
+            <p class="cs-compare__caption">Payout ₦30,000 (+80%) given visual dominance. "Zero trading fee on Bayse" surfaced as a trust signal — not buried, shown at the moment it matters most</p>
           </div>
         </div>
 
@@ -412,11 +416,11 @@
           <div class="cs-impact__row">
             <div>
               <span class="cs-impact__label">User Impact</span>
-              <span class="cs-impact__text">Complete trust. Users see zero fees, the exact outcome if they're right, and every detail of the order before committing. Nothing to second-guess.</span>
+              <span class="cs-impact__text">A review screen that matches the rest of the flow feels intentional. Users don't notice good design — they just feel confident. That confidence is what gets the Confirm tap.</span>
             </div>
             <div>
               <span class="cs-impact__label">Revenue Impact</span>
-              <span class="cs-impact__text">Transparency at the review stage is what converts hesitation into confirmation. A user who trusts the platform deposits more over time — lifetime value is built here, not at the marketing stage.</span>
+              <span class="cs-impact__text">Design consistency is a trust signal. A screen that looks like it belongs converts better than one that feels like a different app. Lifetime value is built on moments like this — small, cumulative, compounding.</span>
             </div>
           </div>
         </div>
@@ -449,6 +453,17 @@
               <img src="images/bayse-new-9.png" alt="New consolidated market rules bottom sheet" />
             </div>
             <p class="cs-compare__caption">One bottom sheet: Market Summary → Rules → Verification Source (punch.ng) → Timeline → Payout. Outcome selector at the top.</p>
+          </div>
+        </div>
+
+        <div class="cs-screen-row">
+          <div class="cs-screen-row__item">
+            <img src="images/bayse-new-5.png" alt="New market detail page showing Market Rules and Timeline as a single clean row" />
+            <p class="cs-screen-row__caption">Entry point on the market detail — "Market Rules & Timeline" lives as a single clean row. One tap opens the full bottom sheet</p>
+          </div>
+          <div class="cs-screen-row__item">
+            <img src="images/bayse-new-10.png" alt="Market rules bottom sheet continued — full timeline and payout details" />
+            <p class="cs-screen-row__caption">Full timeline: Market Open → Market Close → Payout (4–12 hrs after close). Everything in one scroll, nothing scattered</p>
           </div>
         </div>
 
@@ -517,26 +532,29 @@
     <section class="cs-improvement">
       <div class="container">
         <div class="cs-improvement__num">10</div>
-        <span class="cs-section__label">Comments & Social Engagement</span>
-        <h2 class="cs-section__title">Opinions are<br /><em>part of the bet.</em></h2>
+        <span class="cs-section__label">Comments & Opinion Sharing — New Feature</span>
+        <h2 class="cs-section__title">Added: a place<br /><em>to share your take.</em></h2>
         <p class="cs-body">
-          Prediction markets are social by nature — half the fun is arguing your position. The old app had no community layer. The new design adds a comments section where users discuss their reasoning, share information, and challenge each other's takes. Usernames show trade size badges (e.g. "2.4K Atiku"), making the community feel like informed participants, not anonymous noise.
+          The old app had no way to share an opinion. You could trade — but you couldn't say why, read what others thought, or engage with the market beyond placing a bet. This wasn't an improvement to something that existed. It's a feature that didn't exist at all.
+        </p>
+        <p class="cs-body">
+          The new design adds a full comments section directly on the market detail page. Users discuss reasoning, share information, and challenge each other's takes. Trade size badges next to usernames (e.g. "2.4K Atiku") make the community feel like informed participants, not anonymous noise — your position gives your opinion weight.
         </p>
 
         <div class="cs-compare">
           <div>
             <span class="cs-compare__badge cs-compare__badge--before">Before</span>
             <div class="cs-compare__img">
-              <img src="images/Bayse2%20old.png" alt="Old market detail — no comments" />
+              <img src="images/Bayse2%20old.png" alt="Old market detail — no way to share opinions" />
             </div>
-            <p class="cs-compare__caption">Market detail ends after the chart and buy/sell options — no community, no discussion, no reason to come back without a new trade to place</p>
+            <p class="cs-compare__caption">No place to share an opinion. The market detail shows the chart, the candidates, the buy buttons — and nothing else. Read, trade, leave.</p>
           </div>
           <div>
             <span class="cs-compare__badge cs-compare__badge--after">After</span>
             <div class="cs-compare__img">
-              <img src="images/bayse-new-7.png" alt="New comments section" />
+              <img src="images/bayse-new-7.png" alt="New comments section with opinion sharing" />
             </div>
-            <p class="cs-compare__caption">@lagospredict, @betwise_ng, @tradeking99 discussing the ADC race. Trade badges show how much skin each commenter has in the game.</p>
+            <p class="cs-compare__caption">@lagospredict, @betwise_ng, @tradeking99 — users sharing takes, debating outcomes, signalling conviction. Trade badges show how much skin each person has in the game.</p>
           </div>
         </div>
 
