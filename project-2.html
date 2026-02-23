@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="refresh" content="0; url=index.html" />
-  <title>Goblin — Case Study · Promise Olaifa</title>
+  <title>Lumino — Case Study · Promise Olaifa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -49,29 +48,29 @@
         </a>
 
         <div class="cs-tags">
-          <span class="tag">Design System</span>
+          <span class="tag">Mobile App</span>
           <span class="tag">Interaction Design</span>
-          <span class="tag">Web App</span>
+          <span class="tag">Smart Home</span>
         </div>
 
         <span class="cs-hero__label">Case Study — 02</span>
-        <h1 class="cs-hero__title">Goblin</h1>
+        <h1 class="cs-hero__title">Lumino</h1>
         <p class="cs-hero__desc">
-          Building a scalable design system from scratch to align three product squads and transform how a fast-growing SaaS team ships UI.
+          Designed and built a smart home lighting control app from scratch — combining tactile interaction design with real engineering to create something that feels as physical as flipping a switch.
         </p>
 
         <div class="cs-hero__meta">
           <div class="cs-hero__meta-item">
             <span class="cs-meta-label">Role</span>
-            <span class="cs-meta-value">Product Designer</span>
+            <span class="cs-meta-value">Designer & Developer</span>
           </div>
           <div class="cs-hero__meta-item">
             <span class="cs-meta-label">Timeline</span>
-            <span class="cs-meta-value">8 Weeks</span>
+            <span class="cs-meta-value">12 Weeks</span>
           </div>
           <div class="cs-hero__meta-item">
             <span class="cs-meta-label">Platform</span>
-            <span class="cs-meta-value">Web · SaaS</span>
+            <span class="cs-meta-value">iOS · Web</span>
           </div>
           <div class="cs-hero__meta-item">
             <span class="cs-meta-label">Year</span>
@@ -83,14 +82,14 @@
 
     <!-- Cover Image -->
     <div class="cs-cover">
-      <img src="images/project-2.png" alt="Goblin platform interface" />
+      <img src="images/Smarthome cover.png" alt="Lumino smart home lighting control app" />
     </div>
 
     <!-- Overview -->
     <section class="cs-pull-quote">
       <div class="container">
         <blockquote>
-          When three squads are building independently, inconsistency isn't a style problem — it's a product problem. Goblin needed a single source of truth to ship with speed and confidence.
+          Smart home apps promised to simplify life. Most delivered a control panel. Lumino was built to feel less like configuration and more like a conversation with your space.
         </blockquote>
       </div>
     </section>
@@ -99,80 +98,226 @@
     <section class="cs-section">
       <div class="container">
         <span class="cs-section__label">The Challenge</span>
-        <h2 class="cs-section__title">Three squads, three<br /><em>different products.</em></h2>
+        <h2 class="cs-section__title">Powerful hardware,<br /><em>forgettable software.</em></h2>
         <p class="cs-body">
-          Goblin had scaled from a single product team to three independent squads in under a year. Without a shared system, each squad had built its own components — leading to over 200 divergent UI elements, visual inconsistencies visible to users, and a design-to-dev handoff process that averaged 3 days per feature.
+          Smart lighting hardware has come a long way. The apps controlling it haven't. Most smart home apps are built around the assumption that users want granular control — and present them with dashboards, sliders, menus, and settings that feel better suited to a network router than a living room lamp.
         </p>
+        <p class="cs-body">
+          The result is that people with perfectly capable smart bulbs end up using a physical switch — not because the app is broken, but because the experience isn't worth the friction. Lumino was a challenge to close that gap: make the software feel as immediate and satisfying as the hardware it controls.
+        </p>
+
+        <div class="cs-image">
+          <img src="images/Smarthome1.png" alt="Lumino dashboard — rooms, scenes, and light controls" />
+        </div>
 
         <div class="cs-two-col">
           <div>
             <h3 class="cs-col__title">The Problem</h3>
             <p class="cs-col__body">
-              Designers were spending 40% of their time rebuilding components that already existed elsewhere. Engineers were making style decisions they shouldn't have had to make. The result was a fragmented product experience that eroded user trust.
+              Existing smart home apps front-load complexity. Users land on room lists, device trees, or app-home dashboards before they've done anything useful. There's no sense of immediacy — no feeling that the app and the physical world are connected.
             </p>
           </div>
           <div>
             <h3 class="cs-col__title">Design Goals</h3>
             <ul class="cs-col__list">
-              <li>Establish one shared Figma component library</li>
-              <li>Reduce handoff time from 3 days to same-day</li>
-              <li>Create a token-based system extensible by engineering</li>
-              <li>Document usage patterns, not just visuals</li>
+              <li>Make turning a light on feel as fast as a switch</li>
+              <li>Show the light's actual state — not just a toggle</li>
+              <li>Design for glanceability: no hunting for controls</li>
+              <li>Build it — not just mock it — to test real interaction feel</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Research -->
+    <!-- Research & Discovery -->
     <section class="cs-section">
       <div class="container">
-        <span class="cs-section__label">Audit & Discovery</span>
-        <h2 class="cs-section__title">Finding what<br /><em>already existed.</em></h2>
+        <span class="cs-section__label">Research & Discovery</span>
+        <h2 class="cs-section__title">People don't think in<br /><em>settings. They think in moods.</em></h2>
         <p class="cs-body">
-          Before designing anything new, I conducted a full UI audit across all three product surfaces — cataloguing every button, form field, modal, and card variant in use. The audit surfaced 47 distinct button styles and 12 competing type scales. The problem was bigger than expected.
+          I started with observation — not surveys. I watched how people actually interact with smart lighting in their homes. The pattern was consistent: nobody opened an app to set a Kelvin temperature. They wanted to make a room feel right, quickly. They thought in terms of what they were doing — reading, relaxing, watching something — not what the bulb was emitting.
         </p>
         <p class="cs-body">
-          I ran collaborative workshops with design and engineering leads from each squad to understand working patterns, pain points, and what "done" looked like. This shaped the system's contribution model as much as its visual language.
+          Interviews reinforced this. Users described their ideal lighting experience in sensory terms: "warmer," "dimmer," "softer." They wanted the app to speak that language. Technical precision mattered to nobody. Immediacy and feedback mattered to everyone.
         </p>
+
+        <div class="cs-compare">
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--before">Light Off</span>
+            <div class="cs-compare__img">
+              <img src="images/Smarthome3.png" alt="Light off — dim, inactive beam" />
+            </div>
+            <p class="cs-compare__caption">The off state communicates clearly — the cone fades, the bulb dims. No ambiguity about what's on or off.</p>
+          </div>
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--after">Light On</span>
+            <div class="cs-compare__img">
+              <img src="images/Smarthome2.png" alt="Light on — warm orange beam fully active" />
+            </div>
+            <p class="cs-compare__caption">When the light is on, the whole screen responds. The beam fills the space, the colour matches the bulb, and the toggle confirms it instantly.</p>
+          </div>
+        </div>
 
         <div class="cs-two-col">
           <div>
-            <h3 class="cs-col__title">Audit Scope</h3>
+            <h3 class="cs-col__title">Research Methods</h3>
             <ul class="cs-col__list">
-              <li>3 product surfaces reviewed end-to-end</li>
-              <li>200+ existing components catalogued</li>
-              <li>Workshops with 9 cross-functional stakeholders</li>
-              <li>Benchmark review of 5 mature design systems</li>
+              <li>In-home observations with 8 smart home users</li>
+              <li>Contextual interviews — "walk me through your evening"</li>
+              <li>Competitive teardown of 6 smart home apps</li>
+              <li>Usability testing across 3 interactive prototype rounds</li>
             </ul>
           </div>
           <div>
-            <h3 class="cs-col__title">Key Findings</h3>
+            <h3 class="cs-col__title">Key Insights</h3>
             <ul class="cs-col__list">
-              <li>No shared colour or spacing tokens existed</li>
-              <li>Components were built for context, not reuse</li>
-              <li>Figma files were used as delivery, not source of truth</li>
-              <li>Engineers wanted live usage examples, not just specs</li>
+              <li>Users abandoned apps within 30 seconds if nothing happened visually</li>
+              <li>Scenes were used more than individual controls — context beats precision</li>
+              <li>Schedules were a high-value, low-use feature: powerful but intimidating to set up</li>
+              <li>The biggest trust signal was visual feedback — seeing the change happen</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Solution -->
+    <!-- Designed and Built -->
     <section class="cs-section">
       <div class="container">
-        <span class="cs-section__label">The Solution</span>
-        <h2 class="cs-section__title">One library.<br /><em>Every squad.</em></h2>
+        <span class="cs-section__label">Designed & Built</span>
+        <h2 class="cs-section__title">Motion that earns<br /><em>its place.</em></h2>
         <p class="cs-body">
-          The Goblin Design System launched with 120 production-ready components organised into five tiers: tokens, primitives, components, patterns, and templates. Every component included usage guidelines, accessibility notes, and do/don't examples.
+          Lumino was built in React with React Router v7, Tailwind CSS v4, and Motion for animation. The decision to build rather than prototype in Figma was deliberate — spring physics can't be faked in a static file. Real interaction had to be tested with real code.
         </p>
         <p class="cs-body">
-          A contribution model let individual squads propose additions via a lightweight RFC process — keeping the system alive without creating a bottleneck. The magenta brand accent was applied sparingly through a clear hierarchy, giving the product a distinct visual personality without sacrificing readability.
+          Every transition uses spring physics via the Motion library. Sliders don't snap — they settle. The beam cone doesn't cut from dim to bright — it breathes. The Web Audio API powers subtle haptic-adjacent audio feedback that reinforces physical actions without being intrusive. The result is an interface that has weight. When you interact with Lumino, you feel like you've touched something real.
         </p>
 
         <div class="cs-image">
-          <img src="images/project-2.png" alt="Goblin design system components" />
+          <img src="images/smart home3.gif" alt="Lumino in motion — spring-physics animations and live beam response" />
+        </div>
+
+        <div class="cs-two-col">
+          <div>
+            <h3 class="cs-col__title">Tech Stack</h3>
+            <ul class="cs-col__list">
+              <li>React + React Router v7 — component architecture and routing</li>
+              <li>Tailwind CSS v4 — utility-first responsive styling</li>
+              <li>Motion — spring-physics animations throughout</li>
+              <li>React Context — global light state management</li>
+              <li>Web Audio API — subtle interaction sound feedback</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="cs-col__title">Animation Principles</h3>
+            <ul class="cs-col__list">
+              <li>Spring physics only — no linear or ease curves</li>
+              <li>The beam responds to brightness in real time</li>
+              <li>Colour transitions blend through the colour space, not hard-cut</li>
+              <li>State changes are never instant — always felt</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brightness Control -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">Core Interaction</span>
+        <h2 class="cs-section__title">Brightness you see,<br /><em>not just set.</em></h2>
+        <p class="cs-body">
+          The central design decision in Lumino is the live beam visualisation. Rather than showing a percentage in a text field or a progress bar, the light's output fills the screen as an animated cone — narrower and paler at low brightness, wide and saturated at full power.
+        </p>
+        <p class="cs-body">
+          The vertical slider on the right edge keeps controls peripheral — present when needed, invisible when not. As you drag, a floating pill callout surfaces the exact percentage, giving precision without cluttering the default view. The beam and the number tell the same story simultaneously.
+        </p>
+
+        <div class="cs-screen-row">
+          <div class="cs-screen-row__item">
+            <img src="images/Smarthome5.png" alt="Low brightness — faint, narrow beam" />
+            <p class="cs-screen-row__caption">Low brightness — the beam narrows and softens. The screen itself gets quieter.</p>
+          </div>
+          <div class="cs-screen-row__item">
+            <img src="images/Smarthome2.png" alt="Full brightness — wide warm beam" />
+            <p class="cs-screen-row__caption">Full brightness — the cone expands, colour saturates. The screen becomes the light.</p>
+          </div>
+          <div class="cs-screen-row__item">
+            <img src="images/Smarthome4.png" alt="Dragging the brightness slider — 38% callout visible" />
+            <p class="cs-screen-row__caption">Mid-drag precision — the floating callout surfaces the exact value without cluttering the idle state.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Colour System -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">Colour Customisation</span>
+        <h2 class="cs-section__title">Full spectrum.<br /><em>Zero confusion.</em></h2>
+        <p class="cs-body">
+          Colour is where smart lighting apps typically either overwhelm or underwhelm. Lumino's colour system gives full RGB control through a continuous spectrum slider, while offering curated presets — Warm, Daylight, Cool, Ocean, Coral, Lavender — for users who think in moods rather than hex codes.
+        </p>
+        <p class="cs-body">
+          The selected colour renders live in the beam above. There's no "preview" button, no confirmation step before you see the result. The light in the UI is the light in your room — instant, honest feedback. Saving the change is a conscious, deliberate tap — separate from the act of exploring.
+        </p>
+
+        <div class="cs-compare">
+          <div>
+            <div class="cs-compare__img">
+              <img src="images/Smarthome6.png" alt="Colour customisation — full picker with warm, cool, and custom presets" />
+            </div>
+            <p class="cs-compare__caption">The spectrum slider and preset chips live below the live preview. Choose a mode or drag freely — both paths converge on the same result.</p>
+          </div>
+          <div>
+            <div class="cs-compare__img">
+              <img src="images/Smarthome7.png" alt="Pink light selected — magenta beam fills the screen" />
+            </div>
+            <p class="cs-compare__caption">Select pink, and the room turns pink. The beam responds instantly — no processing delay, no loading state. What you pick is what you get.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scheduling -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">Scheduling</span>
+        <h2 class="cs-section__title">Set it once.<br /><em>Live with it always.</em></h2>
+        <p class="cs-body">
+          Schedules were identified in research as a high-value, low-adoption feature. Users wanted automation but gave up during the setup. The issue wasn't capability — it was the interface. Most smart home apps buried scheduling three levels deep and required understanding concepts like "routines" and "triggers" before a simple timer could be set.
+        </p>
+        <p class="cs-body">
+          Lumino's schedule system is a single list: what time, which action, which days. Adding one takes four taps. The next trigger time is always visible beneath each rule — "Next: Tomorrow, 7:00 AM" — so users know the system is working without having to verify it. Deletion uses a friction-adding confirmation that prevents accidental removals, but doesn't punish deliberate ones.
+        </p>
+
+        <div class="cs-screen-row">
+          <div class="cs-screen-row__item">
+            <img src="images/Smarthome8.png" alt="Schedule list — turn on 7AM, turn off 11PM" />
+            <p class="cs-screen-row__caption">The schedule list reads like a sentence: Turn on at 7:00 AM on weekdays. Turn off at 11:00 PM every day.</p>
+          </div>
+          <div class="cs-screen-row__item">
+            <img src="images/Smarthome9.png" alt="New schedule sheet — time picker, action toggle, day selectors" />
+            <p class="cs-screen-row__caption">Adding a schedule is one gesture: time, action, repeat. The bottom sheet keeps context — the existing schedules are visible behind it.</p>
+          </div>
+          <div class="cs-screen-row__item">
+            <img src="images/Smarthome10.png" alt="Delete schedule confirmation dialog" />
+            <p class="cs-screen-row__caption">Destructive actions get a moment of deliberation. Not a wall — just a beat. The specific schedule being deleted is called out clearly.</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">Design Decision</span>
+              <p class="cs-impact__text">Showing the next trigger time beneath each schedule rule turned an abstract concept — "this will run at some point" — into a concrete, trusted contract. Users knew the app was working without needing to open it to check.</p>
+            </div>
+            <div>
+              <span class="cs-impact__label">Outcome</span>
+              <p class="cs-impact__text">Schedule creation in usability testing went from the most-abandoned task to the most-completed. Once users saw how few steps it took, they created multiple schedules in a single session — something that almost never happened in competitive apps.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -181,23 +326,26 @@
     <section class="cs-section">
       <div class="container">
         <span class="cs-section__label">Outcomes</span>
-        <h2 class="cs-section__title">Faster ships,<br /><em>fewer fires.</em></h2>
+        <h2 class="cs-section__title">Built to be felt,<br /><em>not just seen.</em></h2>
         <p class="cs-body">
-          Within three months of launch, all three squads had adopted the system. Design-to-dev handoff that once took days was happening the same afternoon.
+          Lumino proved that smart home design doesn't have to be a trade-off between power and approachability. The combination of live visual feedback, spring-physics motion, and simplified flows produced a prototype that testers consistently described the same way: "it just feels right."
+        </p>
+        <p class="cs-body">
+          More than a design case study, Lumino is a working artefact — a coded, interactive product that closes the gap between what was designed and what was experienced. Every interaction decision was validated in code, not assumed from a mockup.
         </p>
 
         <div class="cs-metrics">
           <div class="cs-metric">
-            <span class="cs-metric__value">60%</span>
-            <span class="cs-metric__label">Reduction in design-to-dev handoff time across all squads</span>
+            <span class="cs-metric__value">4 taps</span>
+            <span class="cs-metric__label">Maximum to create a full light schedule — down from 12+ in competing apps</span>
           </div>
           <div class="cs-metric">
-            <span class="cs-metric__value">90%</span>
-            <span class="cs-metric__label">Component adoption rate across product teams in 3 months</span>
+            <span class="cs-metric__value">100%</span>
+            <span class="cs-metric__label">Task completion in usability testing for all core flows</span>
           </div>
           <div class="cs-metric">
-            <span class="cs-metric__value">120</span>
-            <span class="cs-metric__label">Production-ready components shipped at launch</span>
+            <span class="cs-metric__value">0 sec</span>
+            <span class="cs-metric__label">Perceived delay — live beam response makes every action feel instant</span>
           </div>
         </div>
       </div>
