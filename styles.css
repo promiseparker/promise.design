@@ -521,6 +521,36 @@ ul { list-style: none; }
   font-variant-numeric: tabular-nums;
 }
 
+/* Locked project cards */
+.project__link--locked {
+  cursor: default;
+  display: block;
+  padding: 48px;
+  border: 1px solid var(--color-border);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.project__link--locked .project__img {
+  filter: saturate(0.15);
+  transform: none !important;
+  transition: none;
+}
+
+.project__link--locked .project__overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.project__link--locked .project__cta-text {
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  border-color: var(--color-border);
+}
+
 /* ========================
    ABOUT
 ======================== */
