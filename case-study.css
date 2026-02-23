@@ -229,7 +229,8 @@
   margin-top: 56px;
 }
 
-.cs-image img {
+.cs-image img,
+.cs-image video {
   width: 100%;
   display: block;
   object-fit: cover;
