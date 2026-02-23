@@ -347,7 +347,6 @@
   gap: 20px;
   margin-top: 48px;
   align-items: start;
-  max-width: 680px;
 }
 
 .cs-compare--after-only {
@@ -385,10 +384,23 @@
   color: #86efac;
 }
 
+.cs-compare__img {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
 .cs-compare__img img {
   width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: top;
   display: block;
-  border-radius: 12px;
+  border-radius: 0;
+  transition: transform 0.5s var(--ease-out);
+}
+
+.cs-compare__img:hover img {
+  transform: scale(1.03);
 }
 
 .cs-compare__caption {
@@ -410,14 +422,22 @@
 }
 
 .cs-screen-row__item {
-  flex: 0 1 240px;
+  flex: 1;
   min-width: 0;
 }
 
 .cs-screen-row__item img {
   width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: top;
   display: block;
   border-radius: 12px;
+  transition: transform 0.5s var(--ease-out);
+}
+
+.cs-screen-row__item:hover img {
+  transform: scale(1.03);
 }
 
 .cs-screen-row__caption {
