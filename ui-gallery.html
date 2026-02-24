@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Gallery — Promise Olaifa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">PO</a>
+      <div class="nav__right">
+        <ul class="nav__links">
+          <li><a href="index.html#work" class="nav__link">Work</a></li>
+          <li><a href="ui-gallery.html" class="nav__link is-active">UI</a></li>
+          <li><a href="index.html#about" class="nav__link">About</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Header -->
+    <section class="gallery-header">
+      <div class="container">
+        <span class="gallery-header__label reveal">UI Gallery</span>
+        <h1 class="gallery-header__title reveal">
+          Screens from<br /><em>the work.</em>
+        </h1>
+        <p class="gallery-header__desc reveal">
+          Every screen across every project — no copy, no context. Just the designs.
+        </p>
+        <div class="gallery-header__stats reveal">
+          <span>29 screens</span>
+          <span>·</span>
+          <span>2 projects</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter -->
+    <div class="gallery-filters">
+      <div class="container">
+        <div class="filter-pills">
+          <button class="filter-pill is-active" data-filter="all">
+            All <span class="filter-count">29</span>
+          </button>
+          <button class="filter-pill" data-filter="bayse">
+            Bayse <span class="filter-count">16</span>
+          </button>
+          <button class="filter-pill" data-filter="lumino">
+            Lumino <span class="filter-count">13</span>
+          </button>
+          <button class="filter-pill" data-filter="mobile">
+            Mobile <span class="filter-count">0</span>
+          </button>
+          <button class="filter-pill" data-filter="web">
+            Web <span class="filter-count">0</span>
+          </button>
+          <button class="filter-pill" data-filter="dashboard">
+            Dashboard <span class="filter-count">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <section class="gallery-section">
+      <div class="gallery-masonry" id="galleryGrid">
+
+        <!-- ─── BAYSE SCREENS ────────────────────────────
+             Replace each src with your actual UI image.
+             Keep data-project="bayse" so the filter works.
+        ──────────────────────────────────────────────── -->
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-5.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-6.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-7.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-8.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-9.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-10.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-12.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-13.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-14.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-15.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-16.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-17.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-18.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-19.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-20.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="bayse">
+          <img src="images/bayse-new-21.png" alt="Bayse — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bayse</span>
+          </div>
+        </div>
+
+        <!-- ─── LUMINO SCREENS ───────────────────────────
+             Replace each src with your actual UI image.
+             Keep data-project="lumino" so the filter works.
+        ──────────────────────────────────────────────── -->
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/Smarthome1.png" alt="Lumino — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/Smarthome2.png" alt="Lumino — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/Smarthome3.png" alt="Lumino — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/Smarthome4.png" alt="Lumino — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/Smarthome5.png" alt="Lumino — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/Smarthome6.png" alt="Lumino — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/Smarthome7.png" alt="Lumino — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/Smarthome8.png" alt="Lumino — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/Smarthome9.png" alt="Lumino — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/Smarthome10.png" alt="Lumino — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/smarthome11.JPG" alt="Lumino — Screen" loading="lazy" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <!-- GIF interaction — loads eager so it animates on arrival -->
+        <div class="gallery-item" data-project="lumino">
+          <img src="images/smart%20home3.gif" alt="Lumino — Interaction" loading="eager" />
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <!-- Video interaction — autoplay silent preview in grid, plays with controls in lightbox -->
+        <div class="gallery-item gallery-item--video" data-project="lumino" data-type="video">
+          <video autoplay loop muted playsinline>
+            <source src="images/smarthome12.MOV" type="video/quicktime" />
+          </video>
+          <div class="gallery-item__play" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Lumino</span>
+          </div>
+        </div>
+
+        <!-- ─── STANDALONE MOBILE UI ─────────────────────
+             Add standalone mobile screens here with data-project="mobile"
+             (for mobile work not tied to Bayse or Lumino)
+        ──────────────────────────────────────────────── -->
+
+        <!-- ─── WEB UI ────────────────────────────────────
+             Add web UI screens here with data-project="web"
+        ──────────────────────────────────────────────── -->
+
+        <!-- ─── DASHBOARD UI ─────────────────────────────
+             Add dashboard screens here with data-project="dashboard"
+        ──────────────────────────────────────────────── -->
+
+        <!-- ─── ADDING A NEW PROJECT / STANDALONE UI ────
+             1. Copy any gallery-item block below.
+             2. Set data-project to a new key, e.g. data-project="exploration".
+             3. Add a matching filter pill in the filter bar above:
+                <button class="filter-pill" data-filter="exploration">
+                  Exploration <span class="filter-count">1</span>
+                </button>
+             4. Update the All count and the header stats.
+             That's it — the filter wires up automatically.
+        ──────────────────────────────────────────────── -->
+
+      </div>
+
+      <!-- Empty state — shown when a filter has no items -->
+      <div class="gallery-empty" id="galleryEmpty">
+        <p class="gallery-empty__text">Nothing here yet — screens coming soon.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <button class="lightbox__nav lightbox__prev" id="lightboxPrev" aria-label="Previous screen">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+
+    <button class="lightbox__nav lightbox__next" id="lightboxNext" aria-label="Next screen">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+
+    <div class="lightbox__content">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      <video class="lightbox__video" id="lightboxVideo" autoplay loop muted playsinline controls>
+        <source id="lightboxVideoSrc" src="" type="video/quicktime" />
+      </video>
+      <div class="lightbox__meta">
+        <span class="lightbox__project" id="lightboxProject"></span>
+        <span class="lightbox__counter" id="lightboxCounter"></span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© 2025 Promise Olaifa. Designed & built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="gallery-script.js"></script>
+</body>
+</html>
