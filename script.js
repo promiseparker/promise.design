@@ -136,8 +136,18 @@ const rightImages = [
 ];
 
 const leftImages = [
-  'images/bayse-new-5.webp',
-  'images/Smarthome1.webp',
+  // Bayse (16 screens)
+  'images/bayse-new-5.webp',  'images/bayse-new-6.webp',  'images/bayse-new-7.webp',
+  'images/bayse-new-8.webp',  'images/bayse-new-9.webp',  'images/bayse-new-10.webp',
+  'images/bayse-new-12.webp', 'images/bayse-new-13.webp', 'images/bayse-new-14.webp',
+  'images/bayse-new-15.webp', 'images/bayse-new-16.webp', 'images/bayse-new-17.webp',
+  'images/bayse-new-18.webp', 'images/bayse-new-19.webp', 'images/bayse-new-20.webp',
+  'images/bayse-new-21.webp',
+  // Lumino (11 screens — no .MOV, no cover)
+  'images/Smarthome1.webp',  'images/Smarthome2.webp',  'images/Smarthome3.webp',
+  'images/Smarthome4.webp',  'images/Smarthome5.webp',  'images/Smarthome6.webp',
+  'images/Smarthome7.webp',  'images/Smarthome8.webp',  'images/Smarthome9.webp',
+  'images/Smarthome10.webp', 'images/smarthome11.webp',
 ];
 
 startSlideshow(document.getElementById('mockupRight'), rightImages, 2000);
