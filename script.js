@@ -47,15 +47,18 @@ document.querySelectorAll('.reveal').forEach((el) => {
 
 /* ========================
    NAV — SCROLL STATE
+   (rAF-throttled — no layout thrash on every scroll tick)
 ======================== */
 const nav = document.getElementById('nav');
+let navRafPending = false;
 
 const handleNavScroll = () => {
-  if (window.scrollY > 40) {
-    nav.classList.add('is-scrolled');
-  } else {
-    nav.classList.remove('is-scrolled');
-  }
+  if (navRafPending) return;
+  navRafPending = true;
+  requestAnimationFrame(() => {
+    nav.classList.toggle('is-scrolled', window.scrollY > 40);
+    navRafPending = false;
+  });
 };
 
 window.addEventListener('scroll', handleNavScroll, { passive: true });
@@ -99,16 +102,31 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 /* ========================
-   HERO PARALLAX (subtle)
+   HERO PARALLAX
+   (rAF-throttled + only runs while hero is in view)
 ======================== */
 const heroContent = document.querySelector('.hero__content');
 
 if (heroContent) {
+  let heroRafPending = false;
+  let heroVisible = true;
+
+  const heroObserver = new IntersectionObserver(
+    ([entry]) => { heroVisible = entry.isIntersecting; },
+    { threshold: 0 }
+  );
+  heroObserver.observe(heroContent.closest('.hero') || heroContent);
+
   window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    if (y < window.innerHeight) {
-      heroContent.style.transform = `translateY(${y * 0.08}px)`;
-      heroContent.style.opacity = 1 - y / (window.innerHeight * 0.7);
-    }
+    if (!heroVisible || heroRafPending) return;
+    heroRafPending = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      if (y < window.innerHeight) {
+        heroContent.style.transform = `translateY(${y * 0.08}px)`;
+        heroContent.style.opacity = 1 - y / (window.innerHeight * 0.7);
+      }
+      heroRafPending = false;
+    });
   }, { passive: true });
 }

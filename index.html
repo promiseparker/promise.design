@@ -12,18 +12,21 @@
   <meta property="og:url" content="https://promiseparker.github.io/promise.design/" />
   <meta property="og:title" content="Promise Olaifa — Product Designer" />
   <meta property="og:description" content="Promise Olaifa is a product designer from Nigeria, turning complex problems into clear, intuitive experiences — from early research to polished pixels." />
-  <meta property="og:image" content="https://promiseparker.github.io/promise.design/images/project-1.png" />
+  <meta property="og:image" content="https://promiseparker.github.io/promise.design/images/project-1.webp" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Promise Olaifa — Product Designer" />
   <meta name="twitter:description" content="Promise Olaifa is a product designer from Nigeria, turning complex problems into clear, intuitive experiences — from early research to polished pixels." />
-  <meta name="twitter:image" content="https://promiseparker.github.io/promise.design/images/project-1.png" />
+  <meta name="twitter:image" content="https://promiseparker.github.io/promise.design/images/project-1.webp" />
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <!-- Reduced to 3 weights (was 6) — saves ~30% font payload -->
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600&display=swap" rel="stylesheet" />
+  <!-- Preload LCP image so browser fetches it immediately -->
+  <link rel="preload" as="image" href="images/project-1.webp" fetchpriority="high" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -91,7 +94,7 @@
         <article class="project reveal" data-index="01">
           <a href="project-1.html" class="project__link">
             <div class="project__image">
-              <img src="images/project-1.png" alt="Makins dashboard" class="project__img" />
+              <img src="images/project-1.webp" alt="Bayse prediction market app" class="project__img" fetchpriority="high" decoding="sync" />
               <div class="project__overlay">
                 <span class="project__cta-text">View Case Study →</span>
               </div>
@@ -111,7 +114,7 @@
         <article class="project reveal" data-index="02">
           <a href="project-2.html" class="project__link">
             <div class="project__image">
-              <img src="images/Smarthome cover.png" alt="Lumino smart home lighting app" class="project__img" />
+              <img src="images/Smarthome cover.webp" alt="Lumino smart home lighting app" class="project__img" loading="lazy" decoding="async" />
               <div class="project__overlay">
                 <span class="project__cta-text">View Case Study →</span>
               </div>
@@ -132,7 +135,7 @@
         <article class="project reveal" data-index="03">
           <a href="https://www.vigoride.net/" class="project__link" target="_blank" rel="noopener">
             <div class="project__image">
-              <img src="images/Vigoride cover.png" alt="Vigoride delivery platform" class="project__img" />
+              <img src="images/Vigoride cover.webp" alt="Vigoride delivery platform" class="project__img" loading="lazy" decoding="async" />
               <div class="project__overlay">
                 <span class="project__cta-text">View Live Site →</span>
               </div>
@@ -153,7 +156,7 @@
         <article class="project reveal" data-index="04">
           <a href="https://www.ordaeats.com/" class="project__link" target="_blank" rel="noopener">
             <div class="project__image">
-              <img src="images/ordaeat cover.png" alt="OrdaEats food delivery platform" class="project__img" />
+              <img src="images/ordaeat cover.webp" alt="OrdaEats food delivery platform" class="project__img" loading="lazy" decoding="async" />
               <div class="project__overlay">
                 <span class="project__cta-text">View Live Site →</span>
               </div>
@@ -246,6 +249,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
