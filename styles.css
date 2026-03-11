@@ -310,6 +310,8 @@ ul { list-style: none; }
 
 .hero__content {
   max-width: 740px;
+  margin: 0 auto;
+  text-align: center;
   will-change: transform, opacity;
 }
 
@@ -351,6 +353,7 @@ ul { list-style: none; }
 .hero__cta {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
   transition-delay: 0.4s;
