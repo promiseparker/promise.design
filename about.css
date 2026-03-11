@@ -84,6 +84,61 @@
   border: none;
 }
 
+/* Track info row */
+.music-player__track {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.music-player__cover-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  background: var(--color-border);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.music-player__cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.music-player__cover.is-loaded {
+  opacity: 1;
+}
+
+.music-player__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.music-player__track-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.music-player__artist {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  display: block;
+}
+
 .about-header__label {
   display: block;
   font-size: 11px;

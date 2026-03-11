@@ -107,6 +107,31 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 /* ========================
+   SPOTIFY TRACK INFO
+======================== */
+(async () => {
+  const cover  = document.getElementById('trackCover');
+  const name   = document.getElementById('trackName');
+  const artist = document.getElementById('trackArtist');
+  if (!cover) return;
+
+  try {
+    const res   = await fetch('/api/spotify');
+    if (!res.ok) throw new Error();
+    const track = await res.json();
+
+    name.textContent   = track.name;
+    artist.textContent = track.artist;
+    cover.alt          = `${track.name} by ${track.artist}`;
+    cover.onload       = () => cover.classList.add('is-loaded');
+    cover.src          = track.image;
+  } catch {
+    name.textContent   = 'My Playlist';
+    artist.textContent = 'Promise Olaifa';
+  }
+})();
+
+/* ========================
    MOCKUP SLIDESHOWS
 ======================== */
 function startSlideshow(frameEl, images, intervalMs) {
