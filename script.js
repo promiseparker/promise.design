@@ -123,11 +123,13 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     name.textContent   = track.name;
     artist.textContent = track.artist;
     cover.alt          = `${track.name} by ${track.artist}`;
-    cover.onload       = () => cover.classList.add('is-loaded');
-    cover.src          = track.image;
+    cover.classList.remove('is-loaded');
+    cover.onload = () => cover.classList.add('is-loaded');
+    cover.src    = track.image;
   } catch {
     name.textContent   = 'My Playlist';
     artist.textContent = 'Promise Olaifa';
+    // photo already set in HTML — nothing to do
   }
 })();
 
