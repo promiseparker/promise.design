@@ -11,6 +11,11 @@ const getSystemTheme = () =>
 const applyTheme = (theme) => {
   html.setAttribute('data-theme', theme);
   localStorage.setItem('theme', theme);
+  const spotifyEmbed = document.getElementById('spotifyEmbed');
+  if (spotifyEmbed) {
+    const base = 'https://open.spotify.com/embed/playlist/2FlirRZI9o6GsB0PJ81Fb2?utm_source=generator';
+    spotifyEmbed.src = theme === 'dark' ? base + '&theme=0' : base;
+  }
 };
 
 // Init: stored preference → system preference

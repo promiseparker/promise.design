@@ -57,13 +57,42 @@
     <!-- Header -->
     <section class="about-header">
       <div class="container">
-        <span class="about-header__label reveal">The Person</span>
-        <h1 class="about-header__title reveal">
-          Beyond the<br /><em>pixels.</em>
-        </h1>
-        <p class="about-header__desc reveal">
-          A few things that make me, me — outside the work.
-        </p>
+        <div class="about-header__inner">
+
+          <div class="about-header__text">
+            <span class="about-header__label reveal">The Person</span>
+            <h1 class="about-header__title reveal">
+              Beyond the<br /><em>pixels.</em>
+            </h1>
+            <p class="about-header__desc reveal">
+              A few things that make me, me — outside the work.
+            </p>
+          </div>
+
+          <div class="about-header__player reveal">
+            <div class="music-player">
+              <div class="music-player__header">
+                <div class="music-player__waveform" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <span class="music-player__label">My Playlist</span>
+              </div>
+              <iframe
+                id="spotifyEmbed"
+                src="https://open.spotify.com/embed/playlist/2FlirRZI9o6GsB0PJ81Fb2?utm_source=generator"
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
