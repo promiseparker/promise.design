@@ -641,6 +641,8 @@ ul { list-style: none; }
 
 .contact__inner {
   max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contact__headline {
@@ -684,6 +686,7 @@ ul { list-style: none; }
 .contact__links {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
 }
 
