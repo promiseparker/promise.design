@@ -95,6 +95,34 @@ const activeLinkObserver = new IntersectionObserver(
 sections.forEach((section) => activeLinkObserver.observe(section));
 
 /* ========================
+   MOBILE NAV — HAMBURGER
+======================== */
+const hamburger = document.getElementById('navHamburger');
+const overlay = document.getElementById('navOverlay');
+
+if (hamburger && overlay) {
+  const toggleMenu = (open) => {
+    hamburger.classList.toggle('is-open', open);
+    overlay.classList.toggle('is-open', open);
+    hamburger.setAttribute('aria-expanded', open);
+    overlay.setAttribute('aria-hidden', !open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+
+  hamburger.addEventListener('click', () => {
+    toggleMenu(!hamburger.classList.contains('is-open'));
+  });
+
+  overlay.querySelectorAll('.nav__overlay-link').forEach((link) => {
+    link.addEventListener('click', () => toggleMenu(false));
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') toggleMenu(false);
+  });
+}
+
+/* ========================
    SMOOTH ANCHOR SCROLL
 ======================== */
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
