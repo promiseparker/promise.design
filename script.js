@@ -150,9 +150,18 @@ const leftImages = [
   'images/Smarthome10.webp', 'images/smarthome11.webp',
 ];
 
+// Fisher-Yates shuffle
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 startSlideshow(document.getElementById('mockupRight'), rightImages, 2000);
 setTimeout(() => {
-  startSlideshow(document.getElementById('mockupLeft'), leftImages, 2000);
+  startSlideshow(document.getElementById('mockupLeft'), shuffle(leftImages), 2000);
 }, 1000);
 
 /* ========================
