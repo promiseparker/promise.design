@@ -102,6 +102,50 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 /* ========================
+   MOCKUP SLIDESHOWS
+======================== */
+function startSlideshow(frameEl, images, intervalMs) {
+  if (!frameEl || images.length < 2) return;
+  const slides = frameEl.querySelectorAll('.mockup-slide');
+  if (slides.length < 2) return;
+
+  let imgIndex = 0;
+  let activeSlot = 0;
+
+  slides[0].src = images[0];
+  slides[0].classList.add('active');
+  slides[1].src = images[1 % images.length];
+
+  setInterval(() => {
+    imgIndex = (imgIndex + 1) % images.length;
+    const nextIndex = (imgIndex + 1) % images.length;
+
+    slides[activeSlot].classList.remove('active');
+    activeSlot = activeSlot === 0 ? 1 : 0;
+    slides[activeSlot].classList.add('active');
+    slides[activeSlot === 0 ? 1 : 0].src = images[nextIndex];
+  }, intervalMs);
+}
+
+const rightImages = [
+  'images/Mobile1.webp',  'images/Mobile2.webp',  'images/Mobile3.webp',
+  'images/Mobile4.webp',  'images/Mobile5.webp',  'images/Mobile6.webp',
+  'images/Mobile7.webp',  'images/Mobile8.webp',  'images/Mobile9.webp',
+  'images/Mobile10.webp', 'images/Mobile11.webp', 'images/Mobile12.webp',
+  'images/Mobile13.webp',
+];
+
+const leftImages = [
+  'images/bayse-new-5.webp',
+  'images/Smarthome1.webp',
+];
+
+startSlideshow(document.getElementById('mockupRight'), rightImages, 2000);
+setTimeout(() => {
+  startSlideshow(document.getElementById('mockupLeft'), leftImages, 2000);
+}, 1000);
+
+/* ========================
    HERO PARALLAX
    (rAF-throttled + only runs while hero is in view)
 ======================== */
