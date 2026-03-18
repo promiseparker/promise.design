@@ -18,7 +18,7 @@ const applyTheme = (theme) => {
   }
 };
 
-// Init: stored preference → system preference
+// Init: stored preference → system preferencecla
 applyTheme(getStoredTheme() || getSystemTheme());
 
 themeToggle.addEventListener('click', () => {

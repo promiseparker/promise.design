@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Louisville — TEHCOOP Assessment · Promise Olaifa</title>
+  <meta name="description" content="Designed a tenant maintenance request flow for TEHCOOP's Louisville Facility Management Dashboard — making it effortless for tenants to report issues and stay informed." />
+  <meta name="author" content="Promise Olaifa" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Louisville — TEHCOOP Assessment · Promise Olaifa" />
+  <meta property="og:description" content="Designed a tenant maintenance request flow for TEHCOOP's Louisville Facility Management Dashboard — making it effortless for tenants to report issues and stay informed." />
+  <meta property="og:image" content="images/louisville-cover.webp" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Louisville — TEHCOOP Assessment · Promise Olaifa" />
+  <meta name="twitter:description" content="Designed a tenant maintenance request flow for TEHCOOP's Louisville Facility Management Dashboard." />
+  <meta name="twitter:image" content="images/louisville-cover.webp" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">PO</a>
+      <div class="nav__right">
+        <ul class="nav__links">
+          <li><a href="index.html#work" class="nav__link">Work</a></li>
+          <li><a href="ui-gallery.html" class="nav__link">UI</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="nav__hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__overlay" id="navOverlay" aria-hidden="true">
+    <ul class="nav__overlay-links">
+      <li><a href="index.html#work" class="nav__overlay-link">Work</a></li>
+      <li><a href="ui-gallery.html" class="nav__overlay-link">UI</a></li>
+      <li><a href="about.html" class="nav__overlay-link">About</a></li>
+      <li><a href="index.html#contact" class="nav__overlay-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="cs-hero">
+      <div class="container">
+        <a href="index.html#work" class="cs-back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7"/>
+          </svg>
+          Back to Work
+        </a>
+
+        <div class="cs-tags">
+          <span class="tag">UX Design</span>
+          <span class="tag">Dashboard</span>
+          <span class="tag">Assessment</span>
+        </div>
+
+        <span class="cs-hero__label">Case Study — 06</span>
+        <h1 class="cs-hero__title">TEHCOOP — Maintenance Flow</h1>
+        <p class="cs-hero__desc">
+          TEHCOOP needed a way for tenants to report building issues and stay informed every step of the way. I was given a brief, and this is exactly what I built — and why every decision was made.
+        </p>
+
+        <div class="cs-hero__meta">
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Role</span>
+            <span class="cs-meta-value">Product Designer</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Type</span>
+            <span class="cs-meta-value">Design Assessment</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Client</span>
+            <span class="cs-meta-value">TEHCOOP · Louisville</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Platform</span>
+            <span class="cs-meta-value">Web · Responsive</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-meta-label">Year</span>
+            <span class="cs-meta-value">2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cover -->
+    <div class="cs-cover">
+      <img src="images/louisville-cover.webp" alt="Louisville Facility Management Dashboard — Tenant Maintenance Flow" />
+    </div>
+
+    <!-- Pull Quote -->
+    <section class="cs-pull-quote">
+      <div class="container">
+        <blockquote>
+          A tenant sees a leaking tap. They don't want to figure out a complicated system. They just want to say "this is broken" — and trust that someone will fix it. That one thought shaped every screen I designed.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Context -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Context</span>
+        <h2 class="cs-section__title">A real company.<br /><em>A real problem.</em></h2>
+        <p class="cs-body">
+          TEHCOOP is a real company building something important — a digital platform that connects property managers, tenants, and maintenance staff. Louisville is their real estate project. Think about it like this: hundreds of tenants living in a building. One morning, someone's tap is leaking. Another person's light has been flickering for three days. These are small problems — but when there's no clear, easy way to report them, they become big frustrations. And frustrated tenants don't stay.
+        </p>
+        <p class="cs-body">
+          The platform needed to solve this for three different types of users — tenants who want to report issues, managers who need to assign and track them, and maintenance staff who have to act on them. I was brought in during the interview process and handed a brief. No hand-holding. Just a problem to solve.
+        </p>
+      </div>
+    </section>
+
+    <!-- Brief -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Brief</span>
+        <h2 class="cs-section__title">A design brief became<br /><em>a real product challenge.</em></h2>
+        <p class="cs-body">
+          The brief asked me to design a Facility Management Dashboard that enables tenants to log maintenance requests, track progress, and make payments — while giving managers and maintenance staff the tools they need to move fast and communicate clearly.
+        </p>
+        <p class="cs-body">
+          I was asked to suggest 2 features that address key pain points, then design a complete user flow for one scenario. My two feature recommendations were:
+        </p>
+
+        <div class="cs-two-col">
+          <div>
+            <p class="cs-col__title">Feature 01 — Maintenance Request & Tracking</p>
+            <p class="cs-col__body">
+              A structured way for tenants to report building issues — with photos, descriptions, and priority levels — and then track the status of that request in real time. No more calling the front desk to ask what's happening.
+            </p>
+          </div>
+          <div>
+            <p class="cs-col__title">Feature 02 — Automated Status Notifications</p>
+            <p class="cs-col__body">
+              Live updates pushed to tenants at every stage of their request — from technician assignment to work in progress to fully resolved. The tenant is informed without having to ask. The manager spends less time on follow-up calls.
+            </p>
+          </div>
+        </div>
+
+        <p class="cs-body" style="margin-top: 40px;">
+          I chose to design <strong>Feature 01</strong> in full — the tenant submitting a maintenance request — because it sits at the very start of the journey. If this experience is broken, nothing else works.
+        </p>
+      </div>
+    </section>
+
+    <!-- Thought Process -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Thinking</span>
+        <h2 class="cs-section__title">I didn't open Figma first.<br /><em>I thought about a real moment.</em></h2>
+        <p class="cs-body">
+          Before drawing a single screen, I imagined a specific situation: it's 7am, you've just noticed water dripping from your ceiling. You're already slightly irritated. The last thing you want is to download an app, create an account, navigate five menus, and fill out a paragraph-long form just to say "my ceiling is leaking."
+        </p>
+        <p class="cs-body">
+          You want to describe the problem quickly, attach a photo so there's no confusion, and then go about your day knowing someone is on it. That's the experience I designed for.
+        </p>
+        <p class="cs-body">
+          Every screen in this flow exists to answer one question: what does the tenant need right now? Not what the system needs. Not what looks impressive. What the person in the moment actually needs — and nothing more.
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================
+         SCREEN 01
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">01</div>
+        <span class="cs-section__label">Maintenance Page — The Starting Point</span>
+        <h2 class="cs-section__title">Show them everything<br /><em>at a glance.</em></h2>
+        <p class="cs-body">
+          The first screen a tenant sees is a clean overview of all their past and ongoing requests. Pending, in progress, resolved — everything is visible without any digging. No navigating through menus to find out what's happening with the tap you reported two days ago. The status is right there, in plain language, the moment you open the dashboard.
+        </p>
+        <p class="cs-body">
+          This screen also has one clear action: submit a new request. One button. No ambiguity. If something is broken, this is where you start.
+        </p>
+
+        <div class="cs-compare cs-compare--after-only">
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--after">Design</span>
+            <div class="cs-compare__img">
+              <img src="images/louisville-screen-1.webp" alt="Louisville Maintenance Page — overview of all tenant requests" />
+            </div>
+            <p class="cs-compare__caption">All past and active requests visible on one screen. Status labels in plain language. One clear action: submit a new request.</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">Tenant Impact</span>
+              <span class="cs-impact__text">Tenants always know the current state of their requests without making a single phone call. Anxiety goes down. Trust in the building management goes up.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Manager Impact</span>
+              <span class="cs-impact__text">Fewer check-in calls from tenants asking "what's happening with my request?" Every minute a manager saves on follow-up calls is a minute spent actually managing the building.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         SCREEN 02
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">02</div>
+        <span class="cs-section__label">Request Form — Short, Structured, Human</span>
+        <h2 class="cs-section__title">Ask for exactly<br /><em>what you need. Nothing more.</em></h2>
+        <p class="cs-body">
+          The request form is the heart of this flow. This is the moment a frustrated tenant is typing on their phone at 7am — so the form has to be fast, clear, and impossible to get wrong.
+        </p>
+        <p class="cs-body">
+          Tenants describe the issue in their own words, upload a photo or short video so maintenance staff arrive knowing exactly what they're dealing with, and set a priority level so managers can triage effectively. Three fields. That's it. The form doesn't ask for more than it needs — because the more you ask for, the fewer people complete it.
+        </p>
+
+        <div class="cs-screen-row">
+          <div class="cs-screen-row__item">
+            <img src="images/louisville-screen-2.webp" alt="Louisville Request Form — empty state, ready to fill" />
+            <p class="cs-screen-row__caption">The form before input — clean, uncluttered, nothing in the way. Three fields and a submit button. That's the whole thing.</p>
+          </div>
+          <div class="cs-screen-row__item">
+            <img src="images/louisville-screen-2-2.webp" alt="Louisville Request Form — filled in with issue description, photo and priority" />
+            <p class="cs-screen-row__caption">The form filled in — description written, photo attached, priority set. Ready to submit in under a minute.</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">Tenant Impact</span>
+              <span class="cs-impact__text">Submitting a request takes less than a minute. The photo/video upload removes the back-and-forth of "can you describe it more clearly?" The tenant feels heard from the moment they hit submit.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Manager Impact</span>
+              <span class="cs-impact__text">Requests come in with visual evidence and a priority level already attached. Managers spend less time gathering information and more time acting on it. Resolution time goes down.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         SCREEN 03
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">03</div>
+        <span class="cs-section__label">Authorisation Page — Trust Before You Submit</span>
+        <h2 class="cs-section__title">One extra step<br /><em>that earns a lot of trust.</em></h2>
+        <p class="cs-body">
+          Before a request is submitted, the tenant sees a clear confirmation screen. This isn't just a technical step — it's a trust moment. The tenant reviews what they've submitted, confirms it looks right, and knows that what gets sent is exactly what they intended.
+        </p>
+        <p class="cs-body">
+          It also prevents accidental submissions. No phantom requests clogging up the manager's dashboard. No "I didn't mean to send that" support tickets. The system stays clean because the tenant is given one final moment of clarity before anything goes live.
+        </p>
+
+        <div class="cs-compare cs-compare--after-only">
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--after">Design</span>
+            <div class="cs-compare__img">
+              <img src="images/louisville-screen-3.webp" alt="Louisville Authorisation Page — review and confirm before submitting" />
+            </div>
+            <p class="cs-compare__caption">Review what you're submitting. Confirm it's right. Nothing goes through without the tenant's deliberate sign-off.</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">Tenant Impact</span>
+              <span class="cs-impact__text">The tenant feels in control. They're not wondering if something was sent incorrectly — they confirmed it themselves. That confidence matters, especially when you're reporting something urgent.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">System Impact</span>
+              <span class="cs-impact__text">Fewer duplicate or accidental requests. Cleaner data for managers. The authorisation step costs the tenant about three seconds and saves the entire team from unnecessary noise.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         SCREEN 04
+    ====================== -->
+    <section class="cs-improvement">
+      <div class="container">
+        <div class="cs-improvement__num">04</div>
+        <span class="cs-section__label">Request Details — Live Updates, Zero Guessing</span>
+        <h2 class="cs-section__title">From "I reported it"<br /><em>to "it's fixed" — in real time.</em></h2>
+        <p class="cs-body">
+          This is the screen that makes everything else worth it. Once a request is submitted, the tenant can track it in real time — from the moment a technician is assigned, to when work begins, all the way to when the issue is marked resolved.
+        </p>
+        <p class="cs-body">
+          Every status update is written in plain language. Not "request_status: TECH_ASSIGNED_002" — but "A technician has been assigned to your request." The system communicates like a person, not a database. The tenant knows what's happening, when it's happening, and who is responsible — without ever having to call anyone.
+        </p>
+
+        <div class="cs-compare cs-compare--after-only">
+          <div>
+            <span class="cs-compare__badge cs-compare__badge--after">Design</span>
+            <div class="cs-compare__img">
+              <img src="images/louisville-screen-4.webp" alt="Louisville Request Details — live status tracking from assignment to resolution" />
+            </div>
+            <p class="cs-compare__caption">Live status tracking: technician assigned → work in progress → resolved. Plain language at every stage. The tenant is never left wondering.</p>
+          </div>
+        </div>
+
+        <div class="cs-impact">
+          <div class="cs-impact__row">
+            <div>
+              <span class="cs-impact__label">Tenant Impact</span>
+              <span class="cs-impact__text">No more calling the front desk. No more not knowing. The tenant gets the same feeling you get when you can track a delivery in real time — calm, informed, and in control.</span>
+            </div>
+            <div>
+              <span class="cs-impact__label">Manager Impact</span>
+              <span class="cs-impact__text">Tenants who can see live updates don't call to ask for updates. Every check-in call that doesn't happen is time given back to the manager. This screen alone reduces communication overhead significantly.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flow + Review -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">The Full Flow</span>
+        <h2 class="cs-section__title">Four screens.<br /><em>One seamless journey.</em></h2>
+        <p class="cs-body">
+          Every screen feeds directly into the next. There are no dead ends, no confusing jumps, no moments where the user is left wondering what to do. The flow was designed to feel less like using software and more like having a conversation with a helpful building manager.
+        </p>
+
+        <div class="cs-image" style="margin-top: 48px;">
+          <img src="images/louisville-flow.webp" alt="Louisville maintenance request flow — full interaction walkthrough" />
+        </div>
+
+        <div class="cs-image" style="margin-top: 20px;">
+          <img src="images/louisville-review.webp" alt="Louisville — full design review shots" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact / Metrics -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">What This Changes</span>
+        <h2 class="cs-section__title">Good design isn't decoration.<br /><em>It's the difference between chaos and clarity.</em></h2>
+        <p class="cs-body">
+          This design improves two things that matter most in property management: how quickly problems get reported, and how confidently tenants feel during the process. Every screen removes a reason for frustration and replaces it with a reason to trust the system.
+        </p>
+        <p class="cs-body">
+          For TEHCOOP, a platform tenants actually enjoy using means higher retention, fewer complaints escalated to management, and a building that runs itself better. The maintenance flow is a small part of the dashboard — but it's the part every tenant touches every time something goes wrong. Getting it right isn't optional.
+        </p>
+
+        <div class="cs-metrics">
+          <div class="cs-metric">
+            <span class="cs-metric__value">4 screens</span>
+            <span class="cs-metric__label">A complete end-to-end tenant flow — from spotting a problem to watching it get resolved — designed in full high fidelity</span>
+          </div>
+          <div class="cs-metric">
+            <span class="cs-metric__value">&lt; 1 min</span>
+            <span class="cs-metric__label">Estimated time to submit a maintenance request — three fields, one confirmation, done. No unnecessary steps, no form fatigue</span>
+          </div>
+          <div class="cs-metric">
+            <span class="cs-metric__value">0 calls</span>
+            <span class="cs-metric__label">The number of times a tenant needs to call the front desk to ask for an update — real-time status tracking answers every question before it's asked</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaboration -->
+    <section class="cs-section">
+      <div class="container">
+        <span class="cs-section__label">How I Work With Teams</span>
+        <h2 class="cs-section__title">Great design means nothing<br /><em>if it can't be built.</em></h2>
+        <p class="cs-body">
+          Over the past two months, I've been learning to implement my own designs — HTML, CSS, JavaScript. That changes how I think in Figma. Before I commit to a pattern, I ask myself whether a developer can actually build it without three days of custom work. I don't design beautiful things that can't ship.
+        </p>
+        <p class="cs-body">
+          I'm also genuinely collaborative. I share ideas early, ask questions often, and align with product managers before I go too deep on any screen. The best designs aren't made by one person working in isolation — they come from a team that talks to each other, catches problems early, and cares about the same outcome. I'm that kind of designer.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Next Project -->
+  <div class="cs-next">
+    <div class="container">
+      <a href="project-7.html" class="cs-next__link">
+        <div>
+          <span class="cs-next__label">Next Project</span>
+          <span class="cs-next__title">TotalEnergies — Mortgage Calculator</span>
+        </div>
+        <span class="cs-next__arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© 2026 Promise Olaifa. Designed & built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
