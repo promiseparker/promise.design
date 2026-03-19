@@ -162,6 +162,48 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 })();
 
 /* ========================
+   TEXT SCRAMBLE — HERO HEADLINE
+======================== */
+const headline = document.querySelector('.hero__headline');
+if (headline) {
+  const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  const walker = document.createTreeWalker(headline, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  let n;
+  while ((n = walker.nextNode())) {
+    if (n.textContent.trim()) nodes.push({ node: n, original: n.textContent });
+  }
+  let frame = 0;
+  const FRAMES = 22;
+  const id = setInterval(() => {
+    frame++;
+    nodes.forEach(({ node, original }) => {
+      node.textContent = [...original].map((ch, i) => {
+        if (ch === ' ' || ch === '\n') return ch;
+        const progress = frame / FRAMES;
+        const reveal = i / original.replace(/\s/g, '').length;
+        return progress > reveal ? ch : CHARS[Math.floor(Math.random() * CHARS.length)];
+      }).join('');
+    });
+    if (frame >= FRAMES) {
+      clearInterval(id);
+      nodes.forEach(({ node, original }) => (node.textContent = original));
+    }
+  }, 35);
+}
+
+/* ========================
+   CURSOR GLOW — PROJECT CARDS
+======================== */
+document.querySelectorAll('.project__link:not(.project__link--locked)').forEach((card) => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+    card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+  });
+});
+
+/* ========================
    MOCKUP SLIDESHOWS
 ======================== */
 function startSlideshow(frameEl, images, intervalMs) {
